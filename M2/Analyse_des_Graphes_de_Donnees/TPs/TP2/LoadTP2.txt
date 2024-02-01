@@ -1,0 +1,10 @@
+LOAD CSV WITH HEADERS FROM 'https://perso.liris.cnrs.fr/hamida.seba/DATATP2/users.csv' AS line
+CREATE (:User { id: toInteger(line.id), 
+name: line.name, age: toInteger(line.age), job: line.job, sex:line.sex})
+
+
+LOAD CSV WITH HEADERS FROM 'https://perso.liris.cnrs.fr/hamida.seba/DATATP2/relationships.csv' AS line
+MERGE (m:User { id: toInteger(line.id_source)})
+MERGE (g : User { id : toInteger(line.id_destination) })
+CREATE (m)-[:KNOWS{type:line.relationType, weight:toInteger(line.weight)}]->(g)
+

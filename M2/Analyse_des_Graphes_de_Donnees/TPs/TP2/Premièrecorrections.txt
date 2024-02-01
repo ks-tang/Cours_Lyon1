@@ -1,0 +1,59 @@
+1.a.
+
+╒═════════════╤═════════════╤══════════════════╤══════════════════╕
+│"min(degree)"│"max(degree)"│"avg(degree)"     │"stdev(degree)"   │
+╞═════════════╪═════════════╪══════════════════╪══════════════════╡
+│1            │4            │2.0588235294117645│0.8269362305593855│
+└─────────────┴─────────────┴──────────────────┴──────────────────┘
+
+	match (u:User)-[r]-> ()
+	with u as node, count(r) as degree
+	return  min(degree), max(degree), avg(degree), stdev(degree)
+
+1.b.
+
+╒═════════════╤═════════════╤═════════════╤══════════════════╤═══════════════════╕
+│"relation"   │"min(degree)"│"max(degree)"│"avg(degree)"     │"stdev(degree)"    │
+╞═════════════╪═════════════╪═════════════╪══════════════════╪═══════════════════╡
+│"studentOf"  │1            │2            │1.2999999999999998│0.48304589153964794│
+├─────────────┼─────────────┼─────────────┼──────────────────┼───────────────────┤
+│"advisorOf"  │1            │2            │1.3333333333333333│0.5773502691896257 │
+├─────────────┼─────────────┼─────────────┼──────────────────┼───────────────────┤
+│"colleagueOf"│1            │3            │1.8               │0.7888106377466155 │
+└─────────────┴─────────────┴─────────────┴──────────────────┴───────────────────┘
+
+	match (u:User)-[r:KNOWS]-> ()
+	with u,r.type as relation , count(r) as degree
+	return  relation, min(degree), max(degree), avg(degree), stdev(degree)
+
+2.
+
+	Call gds.graph.project("Proj1", "User", "KNOWS")
+
+3.
+
+	
+	match (u:User{id:5}), (u2:User{id:10})
+	call gds.shortestPath.dijkstra.stream('Proj1',
+    { sourceNode:u,
+     targetNode:u2
+     }
+     )
+	Yield  index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+    order by index
+╒════════════════╤════════════════╤═══════════╤══════════════════════════════════════════════╤═════════════════════╤══════════════════════════════════════════════════════════════════════╕
+│"sourceNodeName"│"targetNodeName"│"totalCost"│"nodeNames"                                   │"costs"              │"path"                                                                │
+╞════════════════╪════════════════╪═══════════╪══════════════════════════════════════════════╪═════════════════════╪══════════════════════════════════════════════════════════════════════╡
+│"elodie"        │"jeanne"        │4.0        │["elodie","laurent","henri","marion","jeanne"]│[0.0,1.0,2.0,3.0,4.0]│[{"name":"elodie","id":5,"job":"student","age":24,"sex":"f"},{"name":"│
+│                │                │           │                                              │                     │laurent","id":12,"job":"teacher","age":41,"sex":"m"},{"name":"henri","│
+│                │                │           │                                              │                     │id":8,"job":"postdoc","age":27,"sex":"m"},{"name":"marion","id":13,"jo│
+│                │                │           │                                              │                     │b":"postdoc","age":26,"sex":"f"},{"name":"jeanne","id":10,"job":"teach│
+│                │                │           │                                              │                     │er","age":42,"sex":"f"}]                                              │
+└────────────────┴────────────────┴───────────┴──────────────────────────────────────────────┴─────────────────────┴──────────────────────────────────────────────────────────────────────┘
