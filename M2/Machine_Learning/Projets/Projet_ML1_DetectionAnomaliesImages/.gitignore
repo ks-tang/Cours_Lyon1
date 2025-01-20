@@ -1,0 +1,6 @@
+cifar_img/data*
+cifar_img/*.meta
+cifar_img/test_batch
+data/*
+scripts/__pycache__
+artifacts/reports

@@ -1,0 +1,17 @@
+list-build:
+  stage: build
+  image: gcc
+  script:
+    - cd Src
+    - make test_liste
+  artifacts:
+    paths:
+      - Src/test_liste
+
+list-test:
+  stage: test
+  script:
+    - Src/test_liste
+  dependencies:
+    - list-build
+

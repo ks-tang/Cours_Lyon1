@@ -1,0 +1,9 @@
+deploy:      # This job runs in the deploy stage.
+  image: maven:3.6.1-jdk-11 # docker image with Maven
+  before_script:
+    - . ci/setup-mvn-proxy.sh
+    - chmod 400 $CI_SSH_KEY
+  script:
+    - cd tp1
+    - mvn clean package
+    - scp -o StrictHostKeyChecking=no -i $CI_SSH_KEY /builds/p1509788/m1if03-2022-base/tp1/target/chatons.war gitlabci@192.168.75.100:/opt/tomcat/webapps/v1.war

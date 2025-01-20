@@ -1,0 +1,68 @@
+\documentclass[varwidth]{standalone}
+\usepackage{algographics}
+
+\begin{document}
+\begin{tikzpicture}[remember picture, start chain = going base right, node distance=3mm]
+  \slnode[on chain]{bidon}{$\times$}{2}
+  \slnode[on chain]{n0}{1}{1}
+  \slnode[on chain]{n1}{4}{2}
+  \slnode[on chain]{n2}{8}{1}
+  \node[on chain, minimum width = 10mm] (insertpos) {} ;
+  \slnode[on chain]{n3}{10}{1}
+  \slnode[on chain]{n4}{11}{2}
+  \slnode[on chain]{n5}{15}{2}
+  \slnode[on chain]{n6}{20}{1}
+  \slnode[on chain]{n7}{21}{1}
+  \node[on chain] (null) {} ;
+
+  \slnode[above = 7mm of insertpos]{new}{9}{2}
+
+  \draw[draw = none] (new+ptr+0) -| coordinate (new+to+0) (new.south west) ;
+  \draw[draw=black, dashed, -latex, rounded corners]
+    (n2+ptr+0) -- ++ (0.3, 0) |- (new+to+0)
+  ;
+  \draw[draw=black, dashed, -latex, rounded corners, shorten > = 2mm]
+    (new+ptr+0) -| (n3)
+  ;
+  \draw[fill=black, draw = none] (new+ptr+0) circle[radius=2pt] ;
+
+  \draw[draw = none] (new+ptr+1) -| coordinate (new+to+1) (new.south west) ;
+  \draw[draw=black, dashed, -latex, rounded corners]
+    (n1+ptr+1) -- ++ (0.3, 0) |- (new+to+1)
+  ;
+  \draw[draw=black, dashed, -latex, rounded corners]
+    (new+ptr+1) -| (n4)
+  ;
+  \draw[fill=black, draw = none] (new+ptr+1) circle[radius=2pt] ;
+
+  \draw 
+    (bidon) ++ (-1,-1.5) coordinate (bbmin)
+    (null) ++ (0.5,4) coordinate (bbmax)
+  ;
+  \useasboundingbox
+    (bbmin) rectangle (bbmax)
+  ;
+
+  \slptr{bidon}{0}{n0}
+  \slptr{n0}{0}{n1}
+  \slptr{n1}{0}{n2}
+  \slptr{n2}{0}{n3}
+  \slptr{n3}{0}{n4}
+  \slptr{n4}{0}{n5}
+  \slptr{n5}{0}{n6}
+  \slptr{n6}{0}{n7}
+  \slptr[nullptr]{n7}{0}{null}
+
+  \slptr{bidon}{1}{n1}
+  \slptr{n1}{1}{n4}
+  \slptr{n4}{1}{n5}
+  \slptr[nullptr]{n5}{1}{null}
+
+  \node[above = 25mm of n1] (courante1) {curseur après la boucle du niveau 1} ;
+  \node[above = 23mm of n2, transform canvas = {xshift = 20mm}] (courante0) {curseur après la boucle du niveau 0} ;
+
+  \draw[-latex, transform canvas = {xshift = -2mm}] (courante1) -- (n1) ;
+  \draw[-latex, shorten > = 2mm, transform canvas = {xshift = -2mm}] (courante0) -- (n2) ;
+\end{tikzpicture}
+
+\end{document}

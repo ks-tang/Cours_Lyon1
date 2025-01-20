@@ -1,0 +1,21 @@
+\documentclass[varwidth = 15cm]{standalone}
+\usepackage{ucblalgo}
+
+\begin{document}
+
+\begin{ucblalgo}
+  \Entree{
+    \begin{itemize}
+      \item $v$ : une valeur à insérer
+    \end{itemize}
+  }
+  \Algorithme {
+    positionner un curseur sur la cellule sentinelle \;
+    \Tq{ la cellule suivant le curseur existe et a une valeur plus petite que $v$} {
+      avancer le curseur sur sa cellule suivante \;
+    }
+    insérer la nouvelle cellule de valeur $v$ entre le curseur et sa suivante \;
+  }
+\end{ucblalgo}
+
+\end{document}

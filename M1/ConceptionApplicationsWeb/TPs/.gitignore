@@ -1,0 +1,14 @@
+*~
+*.back
+target
+node_modules/
+dist/
+.idea
+*.iml
+.vscode
+.settings
+.project
+.classpath
+yarn.lock
+out/
+javadoc/

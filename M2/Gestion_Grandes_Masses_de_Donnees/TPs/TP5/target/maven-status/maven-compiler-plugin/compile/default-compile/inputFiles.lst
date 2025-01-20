@@ -1,0 +1,15 @@
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/topology/TopologyT2.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/MasterInputStreamSpout.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/Exit2Bolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/NothingBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/test/TestStatefulWindowBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/core/Manager.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/stream/StreamBuffer.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/stream/StreamEmiter.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/MyTortoiseBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/test/TestStatelessBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/topology/TopologyT1.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/ExitBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/test/TestStatelessWindowBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/operator/test/TestStatefulBolt.java
+/mnt/c/Users/Cecilia/Documents/GITHUB/CECILIA/ggmd-2024/TP5/src/main/java/stormTP/core/Runner.java

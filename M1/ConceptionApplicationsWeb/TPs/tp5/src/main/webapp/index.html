@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatons !</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/app.css">
+    <script type="application/javascript" src="js/spa.js"></script>
+</head>
+<body>
+<header>
+    <h1 class="header-titre">Chatons.org</h1>
+    <div class="wrapper">
+        <p class="header-user requiresConnection">Bonjour <strong>Toto</strong></p>
+        <p class="header-deco requiresConnection"><a href='#deco'>Déconnexion</a></p>
+    </div>
+    <!--
+        TODO faire en sorte de n'afficher la dernière div que si l'utilisateur est connecté.
+    -->
+</header>
+
+<div class="wrapper">
+    <aside class="menu">
+        <h2>Menu</h2>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href='#index'>Accueil</a></li>
+            <li class="nav-item"><a href='#connect'>Connexion</a></li>
+            <li class="requiresConnection nav-item"><a href='#monCompte'>Mon compte</a></li>
+            <li class="requiresConnection nav-item"><a href='#salons'>Salons</a></li>
+        </ul>
+        <!--
+            TODO n'afficher "Mon compte" et "Salons" que si l'utilisateur est connecté.
+        -->
+    </aside>
+
+    <article class="contenu">
+        <div id="requestResult" class="alert"></div>
+
+        <section id='index' class='active'>
+            <h2>Bienvenue sur Chatons.org !</h2>
+            <p>Actuellement : <strong id="nbUsers">...</strong> utilisateurs.</p>
+            <!--
+                TODO A vous de modifier cette section pour qu'elle affiche les bonnes données et qu'elle se recharge toutes les 5 secondes.
+            -->
+        </section>
+
+        <section id='connect' class='inactive'>
+            <h2>Connectez-vous pour pouvoir chatter</h2>
+                <table>
+                    <tr><td><label for="login_input">Login :</label></td><td><input class="form-control" type="text" id="login_input"></td></tr>
+                    <tr><td><label for="password_input">Mot de passe :</label></td><td><input class="form-control" type="password" id="password_input"></td></tr>
+                    <tr><td><button type="button" class="btn btn-secondary" id="login_button" onclick="connect()">Connexion</button></td></tr>
+                </table>
+            <!--
+                TODO envoyer la requête puis récupérer et stocker le token.
+            -->
+        </section>
+
+        <section id='deco' class='inactive'>
+            <h2>Déconnexion</h2>
+            <p>Cliquez ici pour vous déconnecter :
+                <button type="button" class="btn btn-secondary" id="logout_button" onclick="deco()">Déconnexion</button>
+            </p>
+            <!--
+                TODO envoyer la requête de logout et afficher la page d'accueil sans les éléments pour lesquels il faut être connecté.
+            -->
+        </section>
+
+        <section id='monCompte' class='inactive'>
+            <h2>Mon compte</h2>
+            <table id='compteList'>
+                <tr><td>Login : </td><td><span id="login">toto</span></td></tr>
+                <tr>
+                    <td>Nom : </td>
+                    <td><span id="nom_update_input" contenteditable="true">Toto</span></td>
+                    <td><button type="button" class="btn btn-secondary" id="user_update_button">Modifier</button></td>
+                </tr>
+                <tr>
+                    <td><label for="password_update_input">Mot de passe :</label></td>
+                    <td><input class="form-control" type="password" id="password_update_input"></td>
+                    <td><button type="button" class="btn btn-secondary" id="password_update_button">Modifier</button></td>
+                </tr>
+            </table>
+            <div>Propriétaire de :
+                <ul>
+                    <li>
+                        <span contenteditable="true">Nom du salon 1</span>
+                        <button type="button" class="btn btn-secondary" id="idSalon1_update_button">Modifier le nom</button>
+                        <button type="button" class="btn btn-secondary" id="idSalon1_delete_button">Supprimer</button>
+                    </li>
+                </ul>
+            </div>
+            <div>Membre de :
+                <ul>
+                    <li><a href="#conversation/idDefaultSalon">Salon par défaut</a></li>
+                    <li><a href="#conversation/idSalon3">Nom du salon 3</a></li>
+                </ul>
+            </div>
+
+            <h2>Créer un nouveau salon</h2>
+            <table>
+                <tr>
+                    <td><label for="salon_create_input">Nom du salon :</label></td>
+                    <td><input class="form-control" type="text" id="salon_create_input"></td>
+                    <td><button type="button" class="btn btn-secondary" id="salon_create_button">Créer</button></td>
+                </tr>
+            </table>
+            <!--
+                TODO afficher les informations dans les champs, récupérer les informations sur les salons et générer les éléments et leurs IDs.
+            -->
+        </section>
+
+        <section id='salons' class='inactive'>
+            <h2>Liste des salons</h2>
+            <table>
+                <tr>
+                    <th>Salon</th>
+                    <th>Propriétaire</th>
+                </tr>
+                <tr>
+                    <td><a href="#conversation/defaultSalonId">Salon par défaut</a></td>
+                    <td>admin</td>
+                </tr>
+                <tr>
+                    <td>Nom d'un salon dont l'utilisateur est propriétaire</td>
+                    <td>toto</td>
+                    <td>
+                        <select id="idSalon1_addMember_select">
+                            <option value="">--user à ajouter--</option>
+                            <option value="toto">toto</option>
+                            <option value="titi">titi</option>
+                        </select>
+                        <button type="button" class="btn btn-secondary" id="idSalon1_addMember_button">Ajouter comme membre</button>
+                        <select id="idSalon1_deleteMember_select">
+                            <option value="">--user à retirer--</option>
+                            <option value="toto">toto</option>
+                            <option value="titi">titi</option>
+                        </select>
+                        <button type="button" class="btn btn-secondary" id="idSalon1_deleteMember_button">Retirer ce membre</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#conversation/idSalon3">Nom d'un salon dont l'utilisateur est membre</a></td>
+                    <td>toto</td>
+                </tr>
+                <tr>
+                    <td>Nom d'un salon dont l'utilisateur n'est pas membre</td>
+                    <td>titi</td>
+                </tr>
+            </table>
+            <!--
+                TODO Mettre en place une boucle sur les salons et afficher les noms et les liens pour ceux dont l'utilisateur est propriétaire / membre.
+            -->
+        </section>
+
+        <section id='conversation' class='inactive'>
+            <h2><strong>Nom du salon</strong></h2>
+            <!--
+                TODO afficher le nom du salon
+            -->
+            <p>Il y a actuellement <strong>...</strong> membre(s) dans ce salon.</p>
+            <!--
+                TODO afficher le nombre de membres du salon
+            -->
+            <div class="conversation">
+            <table>
+                <tr>
+                    <th>User</th>
+                    <th>Message</th>
+                </tr>
+                <tr>
+                    <td>toto</td>
+                    <td>Bonjour</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </table>
+            </div>
+            <!--
+                TODO mettre en place une boucle sur les messages et afficher les données.
+                TODO recharger les informations toutes les 5 secondes.
+            -->
+
+            <div class="container d-flex">
+                <div class ="row ">
+                    <div class="col-sm-2">
+                        <label class="form-label" for="text">Message :</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" id="text" size="50">
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-secondary" id="addMessage_button">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
+
+<footer>
+    <div>Licence : <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/"><img
+            alt="Licence Creative Commons" style="border-width:0; vertical-align:middle;"
+            src="https://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png"/></a></div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

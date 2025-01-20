@@ -1,0 +1,95 @@
+\hypertarget{classlifap7__project_1_1VueCase}{}\doxysection{lifap7\+\_\+project.\+Vue\+Case Class Reference}
+\label{classlifap7__project_1_1VueCase}\index{lifap7\_project.VueCase@{lifap7\_project.VueCase}}
+
+
+Inheritance diagram for lifap7\+\_\+project.\+Vue\+Case\+:
+% FIG 0
+
+
+Collaboration diagram for lifap7\+\_\+project.\+Vue\+Case\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlifap7__project_1_1VueCase_a732d2b1b384523b8df982a5123abad78}{Vue\+Case}} (int \+\_\+x, int \+\_\+y, \mbox{\hyperlink{classPackageModele_1_1Jeu}{Jeu}} j)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classlifap7__project_1_1VueCase}{Vue\+Case}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlifap7__project_1_1VueCase_a5bed76089cb5dc163075ed5df89a3263}{get\+\_\+x}} ()
+\begin{DoxyCompactList}\small\item\em Getter de l\textquotesingle{}ordonnée x. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlifap7__project_1_1VueCase_afa2f83d59c5e8d4a88d0f756a075686c}{get\+\_\+y}} ()
+\begin{DoxyCompactList}\small\item\em Getter de l\textquotesingle{}abscisse y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlifap7__project_1_1VueCase_a8fe40ce8ab3b67e02931ce00061e6f8c}{paint\+Component}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Peint les éléments graphiques. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlifap7__project_1_1VueCase_a705ec9d05a0c99e38a4d47a5e8b00887}\label{classlifap7__project_1_1VueCase_a705ec9d05a0c99e38a4d47a5e8b00887}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlifap7__project_1_1VueCase_a732d2b1b384523b8df982a5123abad78}\label{classlifap7__project_1_1VueCase_a732d2b1b384523b8df982a5123abad78}} 
+\index{lifap7\_project.VueCase@{lifap7\_project.VueCase}!VueCase@{VueCase}}
+\index{VueCase@{VueCase}!lifap7\_project.VueCase@{lifap7\_project.VueCase}}
+\doxysubsubsection{\texorpdfstring{VueCase()}{VueCase()}}
+{\footnotesize\ttfamily lifap7\+\_\+project.\+Vue\+Case.\+Vue\+Case (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{\mbox{\hyperlink{classPackageModele_1_1Jeu}{Jeu}}}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classlifap7__project_1_1VueCase}{Vue\+Case}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & Ordonnée de la case \\
+\hline
+{\em \+\_\+y} & Abscisse de la case \\
+\hline
+{\em j} & Jeu actuel \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlifap7__project_1_1VueCase_a5bed76089cb5dc163075ed5df89a3263}\label{classlifap7__project_1_1VueCase_a5bed76089cb5dc163075ed5df89a3263}} 
+\index{lifap7\_project.VueCase@{lifap7\_project.VueCase}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!lifap7\_project.VueCase@{lifap7\_project.VueCase}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily int lifap7\+\_\+project.\+Vue\+Case.\+get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de l\textquotesingle{}ordonnée x. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlifap7__project_1_1VueCase_afa2f83d59c5e8d4a88d0f756a075686c}\label{classlifap7__project_1_1VueCase_afa2f83d59c5e8d4a88d0f756a075686c}} 
+\index{lifap7\_project.VueCase@{lifap7\_project.VueCase}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!lifap7\_project.VueCase@{lifap7\_project.VueCase}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily int lifap7\+\_\+project.\+Vue\+Case.\+get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de l\textquotesingle{}abscisse y. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlifap7__project_1_1VueCase_a8fe40ce8ab3b67e02931ce00061e6f8c}\label{classlifap7__project_1_1VueCase_a8fe40ce8ab3b67e02931ce00061e6f8c}} 
+\index{lifap7\_project.VueCase@{lifap7\_project.VueCase}!paintComponent@{paintComponent}}
+\index{paintComponent@{paintComponent}!lifap7\_project.VueCase@{lifap7\_project.VueCase}}
+\doxysubsubsection{\texorpdfstring{paintComponent()}{paintComponent()}}
+{\footnotesize\ttfamily void lifap7\+\_\+project.\+Vue\+Case.\+paint\+Component (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Peint les éléments graphiques. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/chopperman/lifap7\+\_\+projet/src/lifap7\+\_\+project/\mbox{\hyperlink{VueCase_8java}{Vue\+Case.\+java}}\end{DoxyCompactItemize}

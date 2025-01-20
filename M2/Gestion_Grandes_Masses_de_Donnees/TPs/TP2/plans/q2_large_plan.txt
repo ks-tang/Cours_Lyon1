@@ -1,0 +1,50 @@
+
+                                            QUERY PLAN
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=91582281.23..91584683.73 rows=200 width=64) (actual time=317922.819..319136.538 rows=5 loops=1)
+   Output: (EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval)))), string_agg((((((((row_number() OVER (?)))::text || '. '::text) || ss2.nom) || ' ('::text) || ((count(*)))::text) || ')'::text), ' ; '::text)
+   Group Key: (EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))))
+   Buffers: shared hit=451 read=325822, temp read=454663 written=720706
+   CTE ss2
+     ->  Seq Scan on public.personne_insee_large  (cost=0.00..13082134.24 rows=2768513 width=40) (actual time=336.825..188208.934 rows=24826829 loops=1)
+           Output: split_part((personne_insee_large.nomprenom)::text, '*'::text, 1), (EXTRACT(year FROM to_date((personne_insee_large.datenaiss)::text, 'YYYYMMDD'::text)))::integer, (EXTRACT(year FROM to_date((personne_insee_large.datedeces)::text, 'YYYYMMDD'::text)))::integer
+           Filter: (is_date((personne_insee_large.datenaiss)::text) AND is_date((personne_insee_large.datedeces)::text))
+           Rows Removed by Filter: 89840
+           Buffers: shared hit=445 read=325822
+   ->  WindowAgg  (cost=78500147.00..78501047.00 rows=40000 width=88) (actual time=317546.576..319136.421 rows=50 loops=1)
+         Output: (EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval)))), ss2.nom, (count(*)), row_number() OVER (?), (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))
+         Run Condition: (row_number() OVER (?) <= 10)
+         Buffers: shared hit=451 read=325822, temp read=454663 written=720706
+         ->  Sort  (cost=78500147.00..78500247.00 rows=40000 width=80) (actual time=317546.371..318645.852 rows=4300886 loops=1)
+               Output: (EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval)))), ss2.nom, (count(*)), (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))
+               Sort Key: (EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval)))), (count(*)) DESC
+               Sort Method: external merge  Disk: 186928kB
+               Buffers: shared hit=451 read=325822, temp read=454663 written=720706
+               ->  HashAggregate  (cost=78496589.45..78497089.45 rows=40000 width=80) (actual time=299896.046..314052.510 rows=4300886 loops=1)
+                     Output: EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))), ss2.nom, count(*), (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))
+                     Group Key: (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval)), ss2.nom
+                     Batches: 133  Memory Usage: 8241kB  Disk Usage: 1961768kB
+                     Buffers: shared hit=445 read=325822, temp read=407934 written=673872
+                     ->  Nested Loop  (cost=0.00..76189495.28 rows=307612556 width=40) (actual time=336.887..275425.358 rows=78941572 loops=1)
+                           Output: ss2.nom, (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))
+                           Join Filter: ((EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))) >= (ss2.annee_naissance)::numeric) AND (EXTRACT(year FROM (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))) <= (ss2.annee_deces)::numeric))
+                           Rows Removed by Join Filter: 70019402
+                           Buffers: shared hit=445 read=325822, temp written=83006
+                           ->  CTE Scan on ss2  (cost=0.00..55370.26 rows=2768513 width=40) (actual time=336.835..196928.022 rows=24826829 loops=1)
+                                 Output: ss2.nom, ss2.annee_naissance, ss2.annee_deces
+                                 Buffers: shared hit=445 read=325822, temp written=83006
+                           ->  Materialize  (cost=0.00..20.02 rows=1000 width=8) (actual time=0.000..0.000 rows=6 loops=24826829)
+                                 Output: (generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval))
+                                 ->  ProjectSet  (cost=0.00..5.03 rows=1000 width=8) (actual time=0.027..0.030 rows=6 loops=1)
+                                       Output: generate_series(('1970-01-01'::date)::timestamp with time zone, (CURRENT_DATE)::timestamp with time zone, '10 years'::interval)
+                                       ->  Result  (cost=0.00..0.01 rows=1 width=0) (actual time=0.003..0.003 rows=1 loops=1)
+ Planning:
+   Buffers: shared hit=138
+ Planning Time: 2.649 ms
+ JIT:
+   Functions: 29
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 2.283 ms, Inlining 86.415 ms, Optimization 160.311 ms, Emission 108.678 ms, Total 357.688 ms
+ Execution Time: 319436.936 ms
+(45 rows)

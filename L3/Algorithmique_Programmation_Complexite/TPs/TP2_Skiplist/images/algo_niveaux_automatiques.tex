@@ -1,0 +1,39 @@
+\documentclass[varwidth = 17cm]{standalone}
+\usepackage{ucblalgo}
+
+\begin{document}
+
+\begin{ucblalgo}
+  \Entree{
+    \begin{itemize}
+      \item $v$ : une valeur à insérer
+    \end{itemize}
+  }
+  \Algorithme {
+    niveau courant est initialisé au niveau maximal de la skip liste \;
+    créer un tableau précédentes aussi grand que le nombre de niveaux \;
+    créer un curseur initialisé sur la cellule sentinelle \;
+    \Tq{le niveau courant est positif ou nul}{
+      \Tq{la cellule suivant le curseur au niveau courant existe et a une valeur plus petite}{
+        avancer le curseur sur sa cellule suivante au niveau courant \;
+      }
+      sauvegarder le curseur dans le tableau de précédentes au niveau courant \;
+      diminuer le niveau courant \;
+    }
+    mettre à 0 le niveau courant \;
+    \Tq{le niveau courant est plus petit que le niveau maximal}{
+      \uSi{la nouvelle cellule est sélectionnée pour le niveau courant}{
+        insérer la nouvelle cellule entre la précédente du niveau courant et sa suivante au niveau courant
+      }
+      \Sinon{
+        sortir de la fonction
+      }
+    }
+    \Tq{la nouvelle cellule est sélectionnée pour un niveau supérieur}{
+      ajouter un niveau à la cellule sentinelle et à la nouvelle cellule \;
+      la suivante de la sentinelle sur ce niveau devient la nouvelle cellule \;
+    }
+  }
+\end{ucblalgo}
+
+\end{document}

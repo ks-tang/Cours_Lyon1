@@ -1,0 +1,24 @@
+\documentclass[varwidth = 15cm]{standalone}
+\usepackage{ucblalgo}
+
+\begin{document}
+
+\begin{ucblalgo}
+
+  \Algorithme {
+    ajouter une suivante nullptr à la cellule sentinelle \;
+    initialiser la cellule courante sur la suivante de la sentinelle au niveau 0 \;
+    initialiser la précédente sur la cellule sentinelle \;
+    \Tq{la courante n'a pas atteint la fin de la liste} {
+      tirer a pile ou face si la courante est sélectionnée \;
+      \Si{elle est sélectionnée} {
+        ajouter une suivante nullptr à la courante \;
+        la suivante au niveau 1 de la précédente devient la courante \;
+        la précédente devient la courante \;
+      }
+      la courante avance sur sa suivante \;
+    }
+  }
+\end{ucblalgo}
+
+\end{document}

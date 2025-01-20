@@ -1,0 +1,214 @@
+<html>
+
+  <head>
+    <title>Duels de citations</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  
+  
+  
+  
+  <body>
+  
+  
+  
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a id="btn-open-login-modal" class="button is-light">
+              Utilisateur
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+	
+	
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <h1 class="title">Duels de citations</h1>
+        <p class="subtitle">Quelle est votre citation favorite ?</p>
+      </div>
+    </section>
+	
+	
+    <section class="section">
+	
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active" id="tab-duel">
+            <a>Voter</a>
+          </li>
+          <li id="tab-tout"><a>Toutes les citations</a></li>
+		  <li id="ajout-citation"><a>Ajouter une citation</a></li>
+        </ul>
+      </div>
+	  
+	  
+      <div class="columns" id="div-duel">
+	  
+        <div class="column">
+          <div class="card">
+            <div class="columns card-content">
+              <div class="column is-one-third">
+                <div class="card-image">
+                  <figure class="image">
+                    <img id="image1"/>
+                      <!--src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523"-->
+                    
+                  </figure>
+                </div>
+              </div>
+              <div class="column is-8">
+                <p id="citation1" class="title"><!--"They taste like...burning."--></p>
+                <p id="origine1" class="subtitle"><!--Ralph Wiggum dans The Simpsons--></p>
+              </div>
+            </div>
+			
+            <div class="card-content" id="voteCardLeft">
+              <div class="columns is-centered">
+                <p class="button is-danger">
+                  Voter pour la citation de gauche !
+                </p>
+              </div>
+            </div>
+			
+          </div>
+        </div>
+		
+        <div class="column">
+          <div class="card">
+            <div class="columns card-content">
+              <div class="column is-8">
+                <p id="citation2" class="title">
+                  <!--"I live in a single room above a bowling alley...and below
+                  another bowling alley."-->
+                </p>
+                <p id="origine2" class="subtitle"><!--Frank Grimes dans The Simpsons--></p>
+              </div>
+              <div class="column is-one-third">
+                <div class="card-image">
+                  <figure class="image">
+                    <img id="image2"/> <!--style="transform: scaleX(-1)"--> 
+                      <!-- src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FFrankGrimes.png?1497567511887" -->
+                     
+                    
+                  </figure>
+                </div>
+              </div>
+            </div>
+			
+            <div class="card-content" id="voteCardRight">
+              <div class="columns is-centered">
+                <p class="button is-info">Voter pour la citation de droite !</p>
+              </div>
+            </div>
+			
+          </div>
+        </div>
+		
+      </div>
+	  
+	  
+      <div id="div-tout">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Classement</th>
+              <th>Personnage</th>
+              <th>Citation</th>
+			  <th><I>Cliquez sur une ligne pour des informations détaillées</I></th>  
+            </tr>
+          </thead>
+          <tbody id="tbody">
+		  <!--
+            <tr>
+              <th>1</th>
+              <td>Ralph Wiggum</td>
+              <td>They taste like...burning.</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Frank Grimes</td>
+              <td>
+                I live in a single room above a bowling alley...and below
+                another bowling alley.
+              </td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Rainier Wolfcastle</td>
+              <td>My eyes! The goggles do nothing!</td>
+            </tr>
+			-->
+          </tbody>
+        </table>
+      </div>
+	  
+	  
+	  
+	  <div class="column">
+		<div id="div-ajout">
+		
+			<h2 class="title"> Ajout d'une citation </h2>
+		
+			<form method="post" name="form_ajout" action="" onsubmit="return ajouter(form_ajout)" >
+			
+			<p>Citation : <input required type="text" name="citation" placeholder="Citation"> </p> </br>
+			<p>Personnage : <input required type="text" name="perso" placeholder="Homer"> </p> </br>
+			<p>Origine : <input required type="text" name="origine" placeholder="Série d'origine"> </p> </br>
+			<p>Image : <input type="file" name="image" accept="image/png, image/jpeg"> </p> </br> 
+			<p>Direction du personnage : <select name="PersoDirection">
+				<option value="Right"> Droite </option>
+				<option value="Left"> Gauche </option> 
+				</select> </br>
+		
+			<input  type="submit" value="Valider"  />	
+			</form>
+		
+		
+		</div>
+	  </div>
+	  
+	  
+	  
+	  
+    </section>
+	
+	
+	
+	
+    <div id="mdl-login" class="modal is-active">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+	  
+        <header class="modal-card-head">
+          <p class="modal-card-title">Utilisateur</p>
+          <button
+            id="btn-close-login-modal1"
+            class="delete"
+            aria-label="close"
+          ></button>
+        </header>
+		
+        <section class="modal-card-body">
+          <p id="elt-affichage-login">
+            Ici, il faudrait afficher le login de l'utilisateur.
+          </p>
+        </section>
+		
+        <footer class="modal-card-foot" style="justify-content: flex-end">
+          <button id="btn-close-login-modal2" class="button">Fermer</button>
+        </footer>
+      </div>
+    </div>
+	
+	
+    <script src="client.js"></script>
+  </body>
+  
+  
+  
+</html>
