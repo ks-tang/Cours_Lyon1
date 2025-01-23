@@ -1,0 +1,60 @@
+Limit  (cost=5333322.90..5333322.93 rows=10 width=62) (actual time=42202.342..42269.370 rows=10 loops=1)
+   Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces, (count(*))
+   Buffers: shared hit=3909 read=322413, temp read=630176 written=631138
+   ->  Sort  (cost=5333322.90..5356480.87 rows=9263187 width=62) (actual time=42078.618..42145.643 rows=10 loops=1)
+         Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces, (count(*))
+         Sort Key: (count(*)) DESC
+         Sort Method: top-N heapsort  Memory: 26kB
+         Buffers: shared hit=3909 read=322413, temp read=630176 written=631138
+         ->  Finalize GroupAggregate  (cost=2349959.76..5133148.76 rows=9263187 width=62) (actual time=13847.732..36535.278 rows=24709937 loops=1)
+               Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces, count(*)
+               Group Key: personne_insee.nomprenom, personne_insee.datenaiss, personne_insee.lieunaiss, personne_insee.datedeces, personne_insee.lieudeces
+               Buffers: shared hit=3909 read=322413, temp read=630176 written=631138
+               ->  Gather Merge  (cost=2349959.76..4762621.28 rows=18526374 width=62) (actual time=13847.721..28000.713 rows=24813234 loops=1)
+                     Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces, (PARTIAL count(*))
+                     Workers Planned: 2
+                     Workers Launched: 2
+                     Buffers: shared hit=3909 read=322413, temp read=630176 written=631138
+                     ->  Partial GroupAggregate  (cost=2348959.73..2623218.01 rows=9263187 width=62) (actual time=13365.874..19262.341 rows=8271078 loops=3)
+                           Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces, PARTIAL count(*)
+                           Group Key: personne_insee.nomprenom, personne_insee.datenaiss, personne_insee.lieunaiss, personne_insee.datedeces, personne_insee.lieudeces
+                           Buffers: shared hit=3909 read=322413, temp read=630176 written=631138
+                           Worker 0:  actual time=12631.914..17382.029 rows=6931930 loops=1
+                             JIT:
+                               Functions: 6
+                               Options: Inlining true, Optimization true, Expressions true, Deforming true
+                               Timing: Generation 0.780 ms, Inlining 74.265 ms, Optimization 72.349 ms, Emission 47.457 ms, Total 194.851 ms
+                             Buffers: shared hit=1076 read=90105, temp read=169321 written=169590
+                           Worker 1:  actual time=13618.288..20175.638 rows=8750045 loops=1
+                             JIT:
+                               Functions: 6
+                               Options: Inlining true, Optimization true, Expressions true, Deforming true
+                               Timing: Generation 0.739 ms, Inlining 80.695 ms, Optimization 82.214 ms, Emission 47.831 ms, Total 211.480 ms
+                             Buffers: shared hit=1679 read=113410, temp read=224770 written=225109
+                           ->  Sort  (cost=2348959.73..2374906.36 rows=10378652 width=54) (actual time=13365.829..15805.792 rows=8305556 loops=3)
+                                 Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces
+                                 Sort Key: personne_insee.nomprenom, personne_insee.datenaiss, personne_insee.lieunaiss, personne_insee.datedeces, personne_insee.lieudeces
+                                 Sort Method: external merge  Disk: 583056kB
+                                 Buffers: shared hit=3909 read=322413, temp read=630176 written=631138
+                                 Worker 0:  actual time=12631.874..14617.730 rows=6965716 loops=1
+                                   Sort Method: external merge  Disk: 442888kB
+                                   Buffers: shared hit=1076 read=90105, temp read=169321 written=169590
+                                 Worker 1:  actual time=13618.232..16345.205 rows=8782436 loops=1
+                                   Sort Method: external merge  Disk: 559256kB
+                                   Buffers: shared hit=1679 read=113410, temp read=224770 written=225109
+                                 ->  Parallel Seq Scan on public.personne_insee  (cost=0.00..429992.52 rows=10378652 width=54) (actual time=134.959..1336.173 rows=8305556 loops=3)
+                                       Output: nomprenom, datenaiss, lieunaiss, datedeces, lieudeces
+                                       Buffers: shared hit=3793 read=322413
+                                       Worker 0:  actual time=194.093..1384.556 rows=6965716 loops=1
+                                         Buffers: shared hit=1018 read=90105
+                                       Worker 1:  actual time=210.763..1411.489 rows=8782436 loops=1
+                                         Buffers: shared hit=1621 read=113410
+ Planning:
+   Buffers: shared hit=1
+ Planning Time: 0.146 ms
+ JIT:
+   Functions: 22
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 2.782 ms, Inlining 161.516 ms, Optimization 219.756 ms, Emission 147.290 ms, Total 531.344 ms
+ Execution Time: 42326.398 ms
+(59 rows)

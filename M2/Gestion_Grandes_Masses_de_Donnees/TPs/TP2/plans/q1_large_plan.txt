@@ -1,0 +1,35 @@
+                                                                               QUERY PLAN
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=4092164.90..4092165.40 rows=200 width=40) (actual time=33139.565..33139.586 rows=108 loops=1)
+   Output: (CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END), (count(*))
+   Sort Key: (count(*)) DESC
+   Sort Method: quicksort  Memory: 30kB
+   Buffers: shared hit=323 read=325886, temp read=400721 written=659029
+   ->  HashAggregate  (cost=4092153.76..4092157.26 rows=200 width=40) (actual time=33139.398..33139.426 rows=108 loops=1)
+         Output: (CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END), count(*)
+         Group Key: CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END
+         Batches: 1  Memory Usage: 48kB
+         Buffers: shared hit=320 read=325886, temp read=400721 written=659029
+         ->  Subquery Scan on t  (cost=3394065.58..4074534.15 rows=3523922 width=32) (actual time=16804.059..33105.014 rows=193044 loops=1)
+               Output: CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END
+               Buffers: shared hit=320 read=325886, temp read=400721 written=659029
+               ->  HashAggregate  (cost=3394065.58..4012865.52 rows=3523922 width=62) (actual time=16804.008..33065.754 rows=193044 loops=1)
+                     Output: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces, NULL::bigint
+                     Group Key: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces
+                     Filter: (count(*) > 1)
+                     Planned Partitions: 256  Batches: 1389  Memory Usage: 8289kB  Disk Usage: 2080456kB
+                     Rows Removed by Filter: 24516893
+                     Buffers: shared hit=320 read=325886, temp read=400721 written=659029
+                     ->  Seq Scan on public.personne_insee_large p  (cost=0.00..575372.26 rows=24916626 width=54) (actual time=0.025..2481.790 rows=24916669 loops=1)
+                           Output: p.nomprenom, p.sexe, p.datenaiss, p.lieunaiss, p.commnaiss, p.paysnaiss, p.datedeces, p.lieudeces, p.actedeces
+                           Buffers: shared hit=320 read=325886
+ Planning:
+   Buffers: shared hit=128
+ Planning Time: 1.946 ms
+ JIT:
+   Functions: 15
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 1.537 ms, Inlining 62.997 ms, Optimization 75.842 ms, Emission 57.564 ms, Total 197.941 ms
+ Execution Time: 33397.602 ms
+(31 rows)

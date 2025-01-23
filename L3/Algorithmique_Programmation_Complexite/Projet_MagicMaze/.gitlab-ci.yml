@@ -1,0 +1,49 @@
+# defaults
+image: leshiy1295/gcc_linters_valgrind
+cache:
+  untracked: true
+
+########## melangeur ##########
+
+melangeur-build:
+  stage: build
+  script:
+    - cd Src
+    - make test_melangeur
+  artifacts:
+    paths:
+      - Src/test_melangeur
+
+melangeur-test:
+  stage: test
+  script:
+    - cd Src
+    #- valgrind --leak-check=full --error-exitcode=1 ./test_melangeur
+    - ./test_melangeur
+  dependencies:
+    - melangeur-build
+
+########## dessin ##########
+
+draw-build:
+  stage: build
+  script:
+    - cd Src
+    - make test_draw
+  artifacts:
+    paths:
+      - Src/test_draw
+
+draw-test:
+  stage: test
+  script:
+    - cd Src
+    #- valgrind --leak-check=full --error-exitcode=1 ./test_draw
+    - ./test_draw
+  dependencies:
+    - draw-build
+  artifacts:
+    paths:
+      - /tmp/*.png
+      - /tmp/*.svg
+      - /tmp/*.json

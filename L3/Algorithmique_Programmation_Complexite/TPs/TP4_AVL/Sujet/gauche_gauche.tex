@@ -1,0 +1,57 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+\begin{tikzpicture}[
+  every node/.style={
+    circle, draw, minimum width=6mm,
+  }, 
+  level/.style={
+    sibling distance=20mm/#1,
+    level distance=6mm
+  }
+  ]
+  \node[label={2}] {$\circlearrowright$}
+  child {
+    node[label={1}] {\phantom{1}}
+    child {
+      node {\phantom{1}}
+      child {
+        node {\phantom{1}}
+      }
+      child[missing]{}
+    }
+    child {
+      node {\phantom{1}}
+    }
+  }
+  child {
+    node {\phantom{1}}
+  }
+  ;
+\end{tikzpicture}
+\hspace{10mm} $\rightarrow$ \hspace{10mm}
+\begin{tikzpicture}[
+  every node/.style={
+    circle, draw, minimum width=6mm,
+  }, 
+  level/.style={
+    sibling distance=20mm/#1,
+    level distance=6mm
+  }
+  ]
+  \node {\phantom{1}}
+  child {
+    node {\phantom{1}}
+    child {node {\phantom{1}}}
+    child[missing]{}
+  }
+  child {
+    node {\phantom{1}}
+    child {node {\phantom{1}}}
+    child {node {\phantom{1}}}
+  }
+  ;
+\end{tikzpicture}
+\end{document}

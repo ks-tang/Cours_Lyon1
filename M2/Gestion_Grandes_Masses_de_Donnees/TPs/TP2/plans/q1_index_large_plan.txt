@@ -1,0 +1,41 @@
+                                                                                               QUERY PLAN
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=3671779.40..3671779.90 rows=200 width=40) (actual time=114091.719..114091.726 rows=108 loops=1)
+   Output: (CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END), (count(*))
+   Sort Key: (count(*)) DESC
+   Sort Method: quicksort  Memory: 30kB
+   Buffers: shared hit=2283102 read=22722588
+   ->  HashAggregate  (cost=3671768.26..3671771.76 rows=200 width=40) (actual time=114091.586..114091.605 rows=108 loops=1)
+         Output: (CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END), count(*)
+         Group Key: CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END
+         Batches: 1  Memory Usage: 48kB
+         Buffers: shared hit=2283099 read=22722588
+         ->  Subquery Scan on t  (cost=0.80..3654148.62 rows=3523928 width=32) (actual time=191.118..113971.671 rows=193044 loops=1)
+               Output: CASE WHEN ((t.lieudeces)::text ~~ '97%'::text) THEN "substring"((t.lieudeces)::text, 0, 4) ELSE "substring"((t.lieudeces)::text, 0, 3) END
+               Buffers: shared hit=2283099 read=22722588
+               ->  GroupAggregate  (cost=0.80..3592479.88 rows=3523928 width=62) (actual time=191.112..113879.566 rows=193044 loops=1)
+                     Output: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces, NULL::bigint
+                     Group Key: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces
+                     Filter: (count(*) > 1)
+                     Rows Removed by Filter: 24516893
+                     Buffers: shared hit=2283099 read=22722588
+                     ->  Incremental Sort  (cost=0.80..3086582.55 rows=24916668 width=54) (actual time=191.072..105620.058 rows=24916669 loops=1)
+                           Output: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces
+                           Sort Key: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces
+                           Presorted Key: p.nomprenom
+                           Full-sort Groups: 764033  Sort Method: quicksort  Average Memory: 27kB  Peak Memory: 27kB
+                           Pre-sorted Groups: 33732  Sort Method: quicksort  Average Memory: 39kB  Peak Memory: 49kB
+                           Buffers: shared hit=2283099 read=22722588
+                           ->  Index Scan using index_nomprenom on public.personne_insee_large p  (cost=0.56..2192083.55 rows=24916668 width=54) (actual time=190.644..96241.800 rows=24916669 loops=1)
+                                 Output: p.nomprenom, p.datenaiss, p.lieunaiss, p.datedeces, p.lieudeces
+                                 Buffers: shared hit=2283099 read=22722588
+ Planning:
+   Buffers: shared hit=40 read=3
+ Planning Time: 0.988 ms
+ JIT:
+   Functions: 13
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 1.234 ms, Inlining 63.933 ms, Optimization 70.433 ms, Emission 56.271 ms, Total 191.871 ms
+ Execution Time: 114163.168 ms
+(37 rows)

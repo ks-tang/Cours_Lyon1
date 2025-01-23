@@ -1,0 +1,26 @@
+\documentclass[varwidth = 16cm]{standalone}
+\usepackage{ucblalgo}
+
+\begin{document}
+
+\begin{ucblalgo}
+  \Entree{
+    \begin{itemize}
+      \item $v$ : une valeur à insérer
+    \end{itemize}
+  }
+  \Algorithme {
+    positionner un curseur sur la cellule sentinelle \;
+    \Si{le niveau 1 existe}{
+      \Tq{la cellule suivant le curseur au niveau 1 existe et a une valeur plus petite}{
+        avancer le curseur sur sa cellule suivante au niveau 1 \;
+      }
+    }
+    \Tq{la cellule suivant le curseur au niveau 0 existe et a une valeur plus petite}{
+      avancer le curseur sur sa cellule suivante au niveau 0 \;
+    }
+    insérer la nouvelle cellule entre le curseur et sa suivante au niveau 0 \;
+  }
+\end{ucblalgo}
+
+\end{document}

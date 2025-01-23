@@ -1,0 +1,155 @@
+\ProvidesPackage{algographics}
+\RequirePackage{tikz}
+
+\usetikzlibrary{
+  positioning, 
+  shadows, 
+  calc, 
+  shapes.multipart, 
+  chains, 
+  arrows, 
+  decorations.markings,
+  decorations.pathreplacing
+}
+
+\def\partnames{{
+    "text ", 
+    "two ", 
+    "three ", "
+    four ", 
+    "five ", 
+    "six ", 
+    "seven ", 
+    "eight ",
+    "nine ",
+    "ten "
+  }}
+
+\tikzset{ 
+  arraynode/.style={
+    rectangle,
+    draw,
+    outer sep = 0pt,
+    minimum width = 8mm,
+    minimum height = 8mm
+  },
+  listnode/.style= {
+    draw,
+    rounded corners,
+    rectangle split, 
+    rectangle split parts = 2,
+    rectangle split horizontal,
+    append after command={
+      \pgfextra{\edef\mainname{\tikzlastnode}}
+      let \p1 = (\tikzlastnode.west),
+          \p2 = (\tikzlastnode.text split),
+          \p3 = (\tikzlastnode.east),
+      \n1 = {0.5 * (\x1 + \x2)},
+      \n2 = {0.5 * (\x2 + \x3)} in 
+      (\n2,\y3) node[
+        anchor=center,
+        minimum size=0pt, 
+        inner sep = 0pt, 
+        outer sep = 0pt
+      ] (\mainname +next) {}
+      (\n1,\y2) node[
+        anchor=center,
+        minimum size=0pt, 
+        inner sep = 0pt, 
+        outer sep = 0pt
+      ] (\mainname +info) {}
+    }
+  },
+  slnode/.style={
+    draw,
+    rectangle split,
+    rectangle split horizontal=false,
+    rectangle split parts = 2,
+    inner sep = 2pt,
+    anchor=south,
+  },
+  slvalue/.style={
+    draw=none,
+    circle,
+    inner sep = 2pt,
+    minimum width = 6mm,
+  },
+  slpointers/.style={
+    draw,
+    rounded corners,
+    rectangle split,
+    rectangle split parts = #1,
+    inner sep = 3pt,
+    outer sep = 0pt,
+    append after command={
+      \pgfextra
+        \edef\mainname{\tikzlastnode}
+        \pgfmathparse{int(#1-1)}
+        \let\maxindex\pgfmathresult
+        (\mainname) node {.}
+        \foreach \i in {0,...,\maxindex}
+        {
+          \pgfmathparse{int(\maxindex-\i)}
+          \let\inverseindex\pgfmathresult
+          \pgfmathparse{\partnames[\i] }
+          \draw
+          let \p1 = (\mainname.\pgfmathresult west),
+              \p2 = (\mainname.\pgfmathresult east),
+              \n1 = {0.5*(\x1 + \x2)}
+          in
+          (\n1,\y1) node[
+            anchor=center, 
+            minimum size=0pt, 
+            inner sep = 0pt, 
+            outer sep = 0pt, 
+            circle
+          ] (\mainname+\inverseindex) {} ;
+        }
+      \endpgfextra
+    }
+  },
+  slinner/.style={
+    draw,
+    circle,
+    inner sep = 1pt,
+    fill=black
+  },
+  ptr/.style= {
+    draw,
+    -latex,
+    rounded corners,
+    decoration={
+      markings,
+      mark={at position 0 with {\draw[fill=black] circle [radius=#1];}}
+    },
+    postaction=decorate
+  },
+  ptr/.default=2pt,
+  nullptr/.style= {
+    decoration={
+      markings,
+      mark={at position 1 with {
+          \draw node[circle, anchor=west, outer sep=1pt, inner sep=0pt] {$\times$};}
+      }
+    }
+  }
+}
+
+\newcommand{\slnode}[4][]{%
+  \draw node[slnode, #1] (#2) {
+    \begin{tikzpicture}
+      \draw node[slpointers = #4] (#2+ptr) {} ;
+    \end{tikzpicture}
+    \nodepart{two}
+    \begin{tikzpicture}
+      \node[slvalue] (#2+value) {#3} ;
+      %\node[slvalue] {#2} ;
+    \end{tikzpicture}
+  } ;
+}
+
+\newcommand{\slptr}[4][]{
+  \draw[ptr, #1] (#2+ptr+#3) -- (#2+ptr+#3-|#4.west) ;
+}
+
+\endinput

@@ -1,0 +1,3 @@
+enum Etat {
+    NON_CANDIDAT, CANDIDAT, ELU, PERDU
+}

@@ -1,0 +1,3765 @@
+fileFormatVersion: 2
+guid: e16035839530bb34e868f5139d904e56
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7995040664887309145
+    second: dungeon 8_0
+  - first:
+      213: -4532927561368618483
+    second: dungeon 8_1
+  - first:
+      213: 4373909456863639873
+    second: dungeon 8_2
+  - first:
+      213: 562813115174678483
+    second: dungeon 8_3
+  - first:
+      213: 6351324172623772443
+    second: dungeon 8_4
+  - first:
+      213: -4246156652444046437
+    second: dungeon 8_5
+  - first:
+      213: 8416267171662458489
+    second: dungeon 8_6
+  - first:
+      213: -1357676516129790405
+    second: dungeon 8_7
+  - first:
+      213: -7278067738877723589
+    second: dungeon 8_8
+  - first:
+      213: -4198994368341008588
+    second: dungeon 8_9
+  - first:
+      213: 67484341377299752
+    second: dungeon 8_10
+  - first:
+      213: -3991384306661576597
+    second: dungeon 8_11
+  - first:
+      213: -1533421439854433495
+    second: dungeon 8_12
+  - first:
+      213: -2952091619424761523
+    second: dungeon 8_13
+  - first:
+      213: -3146743154839609166
+    second: dungeon 8_14
+  - first:
+      213: -1090671408825289072
+    second: dungeon 8_15
+  - first:
+      213: 240380875949231851
+    second: dungeon 8_16
+  - first:
+      213: -6849127934030841821
+    second: dungeon 8_17
+  - first:
+      213: -1345321650882124908
+    second: dungeon 8_18
+  - first:
+      213: -813814954960607660
+    second: dungeon 8_19
+  - first:
+      213: 6456353493885055978
+    second: dungeon 8_20
+  - first:
+      213: 6362616951091830810
+    second: dungeon 8_21
+  - first:
+      213: -2602670078722492221
+    second: dungeon 8_22
+  - first:
+      213: -5630232753943543738
+    second: dungeon 8_23
+  - first:
+      213: -8740640305356481380
+    second: dungeon 8_24
+  - first:
+      213: 2393675658181438268
+    second: dungeon 8_25
+  - first:
+      213: -8414514667298668608
+    second: dungeon 8_26
+  - first:
+      213: -199715911968644164
+    second: dungeon 8_27
+  - first:
+      213: -5717701121536367560
+    second: dungeon 8_28
+  - first:
+      213: -1788206311652310961
+    second: dungeon 8_29
+  - first:
+      213: 3198842219704088373
+    second: dungeon 8_30
+  - first:
+      213: -5125684169718053529
+    second: dungeon 8_31
+  - first:
+      213: -2880471500509792125
+    second: dungeon 8_32
+  - first:
+      213: 7230121973717918044
+    second: dungeon 8_33
+  - first:
+      213: 711864143302474367
+    second: dungeon 8_34
+  - first:
+      213: -5515701459185422391
+    second: dungeon 8_35
+  - first:
+      213: -6804423822833150307
+    second: dungeon 8_36
+  - first:
+      213: -677672261850792749
+    second: dungeon 8_37
+  - first:
+      213: -4946232832155503572
+    second: dungeon 8_38
+  - first:
+      213: 5153132167983023056
+    second: dungeon 8_39
+  - first:
+      213: -8076316499678538166
+    second: dungeon 8_40
+  - first:
+      213: -7001982486678509522
+    second: dungeon 8_41
+  - first:
+      213: 651663760226087945
+    second: dungeon 8_42
+  - first:
+      213: 8162724751612792525
+    second: dungeon 8_43
+  - first:
+      213: -3920690966301664483
+    second: dungeon 8_44
+  - first:
+      213: 6804577344126192791
+    second: dungeon 8_45
+  - first:
+      213: 3861358601021046984
+    second: dungeon 8_46
+  - first:
+      213: 299071496029132076
+    second: dungeon 8_47
+  - first:
+      213: 6626523608644177784
+    second: dungeon 8_48
+  - first:
+      213: 7878298853655534422
+    second: dungeon 8_49
+  - first:
+      213: 2149830206152656260
+    second: dungeon 8_50
+  - first:
+      213: -1165319319208801542
+    second: dungeon 8_51
+  - first:
+      213: -4367260825298773662
+    second: dungeon 8_52
+  - first:
+      213: 1869372147367109937
+    second: dungeon 8_53
+  - first:
+      213: 8603398479841549467
+    second: dungeon 8_54
+  - first:
+      213: -8793394964899818890
+    second: dungeon 8_55
+  - first:
+      213: -3997894842637565646
+    second: dungeon 8_56
+  - first:
+      213: -8914522944201509249
+    second: dungeon 8_57
+  - first:
+      213: 5391137445853316548
+    second: dungeon 8_58
+  - first:
+      213: -5045368436019562551
+    second: dungeon 8_59
+  - first:
+      213: -6798978977244264290
+    second: dungeon 8_60
+  - first:
+      213: 6257567097594906858
+    second: dungeon 8_61
+  - first:
+      213: 4044352326305957855
+    second: dungeon 8_62
+  - first:
+      213: -1712274698233840769
+    second: dungeon 8_63
+  - first:
+      213: -7851937647179363532
+    second: dungeon 8_64
+  - first:
+      213: -493068057257966577
+    second: dungeon 8_65
+  - first:
+      213: 3913439493013582753
+    second: dungeon 8_66
+  - first:
+      213: 57110366562325351
+    second: dungeon 8_67
+  - first:
+      213: -1251782346757552737
+    second: dungeon 8_68
+  - first:
+      213: -3299088100619660790
+    second: dungeon 8_69
+  - first:
+      213: 2329807533627838406
+    second: dungeon 8_70
+  - first:
+      213: 7729533532175428531
+    second: dungeon 8_71
+  - first:
+      213: 3964783548212080910
+    second: dungeon 8_72
+  - first:
+      213: 8495398537075702833
+    second: dungeon 8_73
+  - first:
+      213: 1692762744098950647
+    second: dungeon 8_74
+  - first:
+      213: 4709472886839127112
+    second: dungeon 8_75
+  - first:
+      213: 5486492512186584521
+    second: dungeon 8_76
+  - first:
+      213: -6960967609599224157
+    second: dungeon 8_77
+  - first:
+      213: -7454650693116332006
+    second: dungeon 8_78
+  - first:
+      213: -8293856358837618537
+    second: dungeon 8_79
+  - first:
+      213: 2312387787832515700
+    second: dungeon 8_80
+  - first:
+      213: -2854544391967787429
+    second: dungeon 8_81
+  - first:
+      213: -2104435476558413856
+    second: dungeon 8_82
+  - first:
+      213: -5421043379668789244
+    second: dungeon 8_83
+  - first:
+      213: -6001493061519403186
+    second: dungeon 8_84
+  - first:
+      213: 8750481546808134100
+    second: dungeon 8_85
+  - first:
+      213: -1635928573058316511
+    second: dungeon 8_86
+  - first:
+      213: 4328169097313416830
+    second: dungeon 8_87
+  - first:
+      213: -8230133989979737783
+    second: dungeon 8_88
+  - first:
+      213: -8543954528242177433
+    second: dungeon 8_89
+  - first:
+      213: -6442425744379222032
+    second: dungeon 8_90
+  - first:
+      213: -5158565931952591572
+    second: dungeon 8_91
+  - first:
+      213: -3844641436189343521
+    second: dungeon 8_92
+  - first:
+      213: 6437725556326460240
+    second: dungeon 8_93
+  - first:
+      213: 6696747636058117703
+    second: dungeon 8_94
+  - first:
+      213: -3672308624777540663
+    second: dungeon 8_95
+  - first:
+      213: -7712020076184262889
+    second: dungeon 8_96
+  - first:
+      213: 4545101309180232844
+    second: dungeon 8_97
+  - first:
+      213: -3059339690005308717
+    second: dungeon 8_98
+  - first:
+      213: 6259030315925512773
+    second: dungeon 8_99
+  - first:
+      213: 2902397837124364221
+    second: dungeon 8_100
+  - first:
+      213: 3340565988775393019
+    second: dungeon 8_101
+  - first:
+      213: 2241703581107205019
+    second: dungeon 8_102
+  - first:
+      213: -4294664442590092356
+    second: dungeon 8_103
+  - first:
+      213: 4385186045243381117
+    second: dungeon 8_104
+  - first:
+      213: -4344614326062774634
+    second: dungeon 8_105
+  - first:
+      213: 6918978979305931870
+    second: dungeon 8_106
+  - first:
+      213: -1600639579083379795
+    second: dungeon 8_107
+  - first:
+      213: 1533030514182426913
+    second: dungeon 8_108
+  - first:
+      213: 8176825141929365922
+    second: dungeon 8_109
+  - first:
+      213: 8410422085659950141
+    second: dungeon 8_110
+  - first:
+      213: 1046309370227107270
+    second: dungeon 8_111
+  - first:
+      213: -8110866915302029439
+    second: dungeon 8_112
+  - first:
+      213: 5247400410470011406
+    second: dungeon 8_113
+  - first:
+      213: 2189577512404802846
+    second: dungeon 8_114
+  - first:
+      213: 784822661342651636
+    second: dungeon 8_115
+  - first:
+      213: 7462610644469839646
+    second: dungeon 8_116
+  - first:
+      213: 7040401672593231173
+    second: dungeon 8_117
+  - first:
+      213: -8312773332975310582
+    second: dungeon 8_118
+  - first:
+      213: -5610723411461036528
+    second: dungeon 8_119
+  - first:
+      213: -7268284584906506440
+    second: dungeon 8_120
+  - first:
+      213: 1960615415574589222
+    second: dungeon 8_121
+  - first:
+      213: 1554397000054020375
+    second: dungeon 8_122
+  - first:
+      213: 3694713599812353868
+    second: dungeon 8_123
+  - first:
+      213: -8546927295747816552
+    second: dungeon 8_124
+  - first:
+      213: 595424181786309202
+    second: dungeon 8_125
+  - first:
+      213: 2606860306942080020
+    second: dungeon 8_126
+  - first:
+      213: -6511411108970725364
+    second: dungeon 8_127
+  - first:
+      213: -4555034665671239852
+    second: dungeon 8_128
+  - first:
+      213: -6671675833763698864
+    second: dungeon 8_129
+  - first:
+      213: -8940969847963721124
+    second: dungeon 8_130
+  - first:
+      213: 5764663153298303369
+    second: dungeon 8_131
+  - first:
+      213: -316029001588906367
+    second: dungeon 8_132
+  - first:
+      213: -3786967224180697321
+    second: dungeon 8_133
+  - first:
+      213: 8000296743259988270
+    second: dungeon 8_134
+  - first:
+      213: -3969749552262846923
+    second: dungeon 8_135
+  - first:
+      213: 2115201229274887752
+    second: dungeon 8_136
+  - first:
+      213: 8747457289740797549
+    second: dungeon 8_137
+  - first:
+      213: -7217686609619499176
+    second: dungeon 8_138
+  - first:
+      213: 4117463235442883597
+    second: dungeon 8_139
+  - first:
+      213: 8323337957905994030
+    second: dungeon 8_140
+  - first:
+      213: 9019615404357082826
+    second: dungeon 8_141
+  - first:
+      213: 7384683666970666182
+    second: dungeon 8_142
+  - first:
+      213: 9168614713074116460
+    second: dungeon 8_143
+  - first:
+      213: -5737201363606882931
+    second: dungeon 8_144
+  - first:
+      213: 2283022979282700816
+    second: dungeon 8_145
+  - first:
+      213: 4695351684174238766
+    second: dungeon 8_146
+  - first:
+      213: -2989397159906966850
+    second: dungeon 8_147
+  - first:
+      213: 9079134933838482981
+    second: dungeon 8_148
+  - first:
+      213: -4459856894301666281
+    second: dungeon 8_149
+  - first:
+      213: -5574856171598345543
+    second: dungeon 8_150
+  - first:
+      213: 6643485748715420329
+    second: dungeon 8_151
+  - first:
+      213: 8120812057564805968
+    second: dungeon 8_152
+  - first:
+      213: 3886643088134201542
+    second: dungeon 8_153
+  - first:
+      213: -7710044783902879226
+    second: dungeon 8_154
+  - first:
+      213: -3206670478282472323
+    second: dungeon 8_155
+  - first:
+      213: -1257161396649027070
+    second: dungeon 8_156
+  - first:
+      213: -7395576401961318312
+    second: dungeon 8_157
+  - first:
+      213: 3284833999796068251
+    second: dungeon 8_158
+  - first:
+      213: 6627154706771575617
+    second: dungeon 8_159
+  - first:
+      213: -9077219448119809154
+    second: dungeon 8_160
+  - first:
+      213: -7217616258673543393
+    second: dungeon 8_161
+  - first:
+      213: 2901458870806199667
+    second: dungeon 8_162
+  - first:
+      213: -3344418329984799872
+    second: dungeon 8_163
+  - first:
+      213: -3863569209852431484
+    second: dungeon 8_164
+  - first:
+      213: 6084172906033788946
+    second: dungeon 8_165
+  - first:
+      213: 5265285013659624276
+    second: dungeon 8_166
+  - first:
+      213: -1038196586493741767
+    second: dungeon 8_167
+  - first:
+      213: 1776183653600847837
+    second: dungeon 8_168
+  - first:
+      213: -6493184788617826183
+    second: dungeon 8_169
+  - first:
+      213: -4228921940774797268
+    second: dungeon 8_170
+  - first:
+      213: 4916660218057198498
+    second: dungeon 8_171
+  - first:
+      213: 7929087650227591430
+    second: dungeon 8_172
+  - first:
+      213: -5703653754984551410
+    second: dungeon 8_173
+  - first:
+      213: -5407262761103349719
+    second: dungeon 8_174
+  - first:
+      213: -3804107599998403820
+    second: dungeon 8_175
+  - first:
+      213: 8380500703417702689
+    second: dungeon 8_176
+  - first:
+      213: 2252118135571959368
+    second: dungeon 8_177
+  - first:
+      213: 7879001708782975398
+    second: dungeon 8_178
+  - first:
+      213: -2128327540342927011
+    second: dungeon 8_179
+  - first:
+      213: -4855572147911323836
+    second: dungeon 8_180
+  - first:
+      213: -6089611547052175149
+    second: dungeon 8_181
+  - first:
+      213: 1194549501859989736
+    second: dungeon 8_182
+  - first:
+      213: 6993686407854390667
+    second: dungeon 8_183
+  - first:
+      213: 7111808687516204030
+    second: dungeon 8_184
+  - first:
+      213: 8157590016502826993
+    second: dungeon 8_185
+  - first:
+      213: 9083140318023389114
+    second: dungeon 8_186
+  - first:
+      213: -1327552549462179801
+    second: dungeon 8_187
+  - first:
+      213: 901104161658683132
+    second: dungeon 8_188
+  - first:
+      213: 8701173757735367952
+    second: dungeon 8_189
+  - first:
+      213: 2901395449496207232
+    second: dungeon 8_190
+  - first:
+      213: -5222983320999177400
+    second: dungeon 8_191
+  - first:
+      213: 4265521110123534938
+    second: dungeon 8_192
+  - first:
+      213: -2461893262382680857
+    second: dungeon 8_193
+  - first:
+      213: 3780673639610356282
+    second: dungeon 8_194
+  - first:
+      213: 6751629940605380559
+    second: dungeon 8_195
+  - first:
+      213: 727766071467674006
+    second: dungeon 8_196
+  - first:
+      213: -247573275601571014
+    second: dungeon 8_197
+  - first:
+      213: 4409032295653026465
+    second: dungeon 8_198
+  - first:
+      213: -8990393372647041718
+    second: dungeon 8_199
+  - first:
+      213: 3067717462098721657
+    second: dungeon 8_200
+  - first:
+      213: -1773372577105226818
+    second: dungeon 8_201
+  - first:
+      213: 9157185417052763256
+    second: dungeon 8_202
+  - first:
+      213: 2757784767923360422
+    second: dungeon 8_203
+  - first:
+      213: 3025134804445200434
+    second: dungeon 8_204
+  - first:
+      213: 7056776157601041950
+    second: dungeon 8_205
+  - first:
+      213: -1612859255637483933
+    second: dungeon 8_206
+  - first:
+      213: -5195448106376694282
+    second: dungeon 8_207
+  - first:
+      213: 4178417620683143493
+    second: dungeon 8_208
+  - first:
+      213: -3360131276229957150
+    second: dungeon 8_209
+  - first:
+      213: 8402244790042752645
+    second: dungeon 8_210
+  - first:
+      213: -569741826937830219
+    second: dungeon 8_211
+  - first:
+      213: -6474833764335293789
+    second: dungeon 8_212
+  - first:
+      213: 2525210842575387967
+    second: dungeon 8_213
+  - first:
+      213: -6263413591253833309
+    second: dungeon 8_214
+  - first:
+      213: 8294650095102239115
+    second: dungeon 8_215
+  - first:
+      213: 2505276603700016359
+    second: dungeon 8_216
+  - first:
+      213: 7500988440635529634
+    second: dungeon 8_217
+  - first:
+      213: -5885683075611006964
+    second: dungeon 8_218
+  - first:
+      213: 3869953161870396156
+    second: dungeon 8_219
+  - first:
+      213: 597943168729675588
+    second: dungeon 8_220
+  - first:
+      213: -1176120085534358209
+    second: dungeon 8_221
+  - first:
+      213: 4004698261563665555
+    second: dungeon 8_222
+  - first:
+      213: 8970303435401969639
+    second: dungeon 8_223
+  - first:
+      213: -3922790821032737405
+    second: dungeon 8_224
+  - first:
+      213: 5543965543362660805
+    second: dungeon 8_225
+  - first:
+      213: 6209521989666945122
+    second: dungeon 8_226
+  - first:
+      213: 3098468591689348564
+    second: dungeon 8_227
+  - first:
+      213: -3260346149045338538
+    second: dungeon 8_228
+  - first:
+      213: 5036437532077252070
+    second: dungeon 8_229
+  - first:
+      213: 7536482716095330714
+    second: dungeon 8_230
+  - first:
+      213: -3122576538417713702
+    second: dungeon 8_231
+  - first:
+      213: -1961180215315133429
+    second: dungeon 8_232
+  - first:
+      213: -5006008466200863858
+    second: dungeon 8_233
+  - first:
+      213: 231081413079909649
+    second: dungeon 8_234
+  - first:
+      213: -7654010308084101201
+    second: dungeon 8_235
+  - first:
+      213: 3003052901475684057
+    second: dungeon 8_236
+  - first:
+      213: -3201182494002864942
+    second: dungeon 8_237
+  - first:
+      213: 8790523941251960132
+    second: dungeon 8_238
+  - first:
+      213: 3964763656060434921
+    second: dungeon 8_239
+  - first:
+      213: -8340651263259244128
+    second: dungeon 8_240
+  - first:
+      213: -3519323663846672307
+    second: dungeon 8_241
+  - first:
+      213: 1797138386498701158
+    second: dungeon 8_242
+  - first:
+      213: -8975281859970416120
+    second: dungeon 8_243
+  - first:
+      213: -1122434943665834523
+    second: dungeon 8_244
+  - first:
+      213: 6846202394378439315
+    second: dungeon 8_245
+  - first:
+      213: -3074575469950769907
+    second: dungeon 8_246
+  - first:
+      213: -4721477328487578435
+    second: dungeon 8_247
+  - first:
+      213: -983674436860341060
+    second: dungeon 8_248
+  - first:
+      213: 6347032102382291458
+    second: dungeon 8_249
+  - first:
+      213: -628469520371796326
+    second: dungeon 8_250
+  - first:
+      213: -5890761356983568759
+    second: dungeon 8_251
+  - first:
+      213: -3552735295869564857
+    second: dungeon 8_252
+  - first:
+      213: 6235651718090145919
+    second: dungeon 8_253
+  - first:
+      213: 6495727072911236599
+    second: dungeon 8_254
+  - first:
+      213: -1622667317258161424
+    second: dungeon 8_255
+  - first:
+      213: 991932379282907902
+    second: dungeon 8_256
+  - first:
+      213: -183516291833520785
+    second: dungeon 8_257
+  - first:
+      213: -2479780619971456101
+    second: dungeon 8_258
+  - first:
+      213: 4965577909934283570
+    second: dungeon 8_259
+  - first:
+      213: 8622156077330824117
+    second: dungeon 8_260
+  - first:
+      213: -6940262211294256326
+    second: dungeon 8_261
+  - first:
+      213: 1789139144517492587
+    second: dungeon 8_262
+  - first:
+      213: 6806660191089154623
+    second: dungeon 8_263
+  - first:
+      213: 1321526008527765299
+    second: dungeon 8_264
+  - first:
+      213: -7802041540675851486
+    second: dungeon 8_265
+  - first:
+      213: 3336069973642212605
+    second: dungeon 8_266
+  - first:
+      213: -6071564284368202764
+    second: dungeon 8_267
+  - first:
+      213: -7738654653430831623
+    second: dungeon 8_268
+  - first:
+      213: 781670052306891299
+    second: dungeon 8_269
+  - first:
+      213: 4566525843045561433
+    second: dungeon 8_270
+  - first:
+      213: -6797720238541230110
+    second: dungeon 8_271
+  - first:
+      213: 476373649091911011
+    second: dungeon 8_272
+  - first:
+      213: 4875551711041263616
+    second: dungeon 8_273
+  - first:
+      213: 6248526172046891489
+    second: dungeon 8_274
+  - first:
+      213: 270509335166126856
+    second: dungeon 8_275
+  - first:
+      213: -3341839496065573177
+    second: dungeon 8_276
+  - first:
+      213: 1518022586437020457
+    second: dungeon 8_277
+  - first:
+      213: 143746661700060630
+    second: dungeon 8_278
+  - first:
+      213: -453898484355729801
+    second: dungeon 8_279
+  - first:
+      213: -5400481324090740005
+    second: dungeon 8_280
+  - first:
+      213: 5540710148916062543
+    second: dungeon 8_281
+  - first:
+      213: 6798373094169507763
+    second: dungeon 8_282
+  - first:
+      213: -3144073691719947013
+    second: dungeon 8_283
+  - first:
+      213: 5727766928442110511
+    second: dungeon 8_284
+  - first:
+      213: 2625775209203437736
+    second: dungeon 8_285
+  - first:
+      213: 181790976481297306
+    second: dungeon 8_286
+  - first:
+      213: 3138088784597128940
+    second: dungeon 8_287
+  - first:
+      213: 7494817647140879829
+    second: dungeon 8_288
+  - first:
+      213: 8934482103423342814
+    second: dungeon 8_289
+  - first:
+      213: 8723895898860386408
+    second: dungeon 8_290
+  - first:
+      213: -3099480693291476983
+    second: dungeon 8_291
+  - first:
+      213: -6394374221904152946
+    second: dungeon 8_292
+  - first:
+      213: -519174169275775116
+    second: dungeon 8_293
+  - first:
+      213: -1505912318108289092
+    second: dungeon 8_294
+  - first:
+      213: 1190187052683921162
+    second: dungeon 8_295
+  - first:
+      213: -1721969924226058000
+    second: dungeon 8_296
+  - first:
+      213: 3561723492070934650
+    second: dungeon 8_297
+  - first:
+      213: -951916166362615378
+    second: dungeon 8_298
+  - first:
+      213: 1989192463744783671
+    second: dungeon 8_299
+  - first:
+      213: 5092381237023502579
+    second: dungeon 8_300
+  - first:
+      213: -2282461512346951833
+    second: dungeon 8_301
+  - first:
+      213: 6719612935827519669
+    second: dungeon 8_302
+  - first:
+      213: -8952382461001023689
+    second: dungeon 8_303
+  - first:
+      213: -3302956168561993555
+    second: dungeon 8_304
+  - first:
+      213: -2442571047291766987
+    second: dungeon 8_305
+  - first:
+      213: 1990836002580848954
+    second: dungeon 8_306
+  - first:
+      213: 4338602717249596167
+    second: dungeon 8_307
+  - first:
+      213: -1042430347081401749
+    second: dungeon 8_308
+  - first:
+      213: -7864470182810500052
+    second: dungeon 8_309
+  - first:
+      213: 6738119983432588579
+    second: dungeon 8_310
+  - first:
+      213: 4482541304044180277
+    second: dungeon 8_311
+  - first:
+      213: 8682666036017686908
+    second: dungeon 8_312
+  - first:
+      213: -1411971258973745904
+    second: dungeon 8_313
+  - first:
+      213: -8147872775757918508
+    second: dungeon 8_314
+  - first:
+      213: 1005304607816129416
+    second: dungeon 8_315
+  - first:
+      213: -8389908315909565756
+    second: dungeon 8_316
+  - first:
+      213: -8844143354073916365
+    second: dungeon 8_317
+  - first:
+      213: 2972734457026833484
+    second: dungeon 8_318
+  - first:
+      213: -3464995321034732916
+    second: dungeon 8_319
+  - first:
+      213: -283424723811446653
+    second: dungeon 8_320
+  - first:
+      213: -2295430288093724020
+    second: dungeon 8_321
+  - first:
+      213: -6285298874476802896
+    second: dungeon 8_322
+  - first:
+      213: 5929965153229138097
+    second: dungeon 8_323
+  - first:
+      213: -8197829286468226959
+    second: dungeon 8_324
+  - first:
+      213: 4449588029293387605
+    second: dungeon 8_325
+  - first:
+      213: 2857132927348174551
+    second: dungeon 8_326
+  - first:
+      213: -1784926536248546134
+    second: dungeon 8_327
+  - first:
+      213: -8259909231291577473
+    second: dungeon 8_328
+  - first:
+      213: 8396058539320503306
+    second: dungeon 8_329
+  - first:
+      213: 8391316005835521008
+    second: dungeon 8_330
+  - first:
+      213: 5588693192839433549
+    second: dungeon 8_331
+  - first:
+      213: -1589106218584615032
+    second: dungeon 8_332
+  - first:
+      213: -8185842468545324955
+    second: dungeon 8_333
+  - first:
+      213: -6779231975656735197
+    second: dungeon 8_334
+  - first:
+      213: -7953756338646525558
+    second: dungeon 8_335
+  - first:
+      213: 8513770433057754461
+    second: dungeon 8_336
+  - first:
+      213: -1092921692533184940
+    second: dungeon 8_337
+  - first:
+      213: 500112736915637089
+    second: dungeon 8_338
+  - first:
+      213: -6276745007795928512
+    second: dungeon 8_339
+  - first:
+      213: 471159960570120734
+    second: dungeon 8_340
+  - first:
+      213: -6551182626873041042
+    second: dungeon 8_341
+  - first:
+      213: 5084026037725700187
+    second: dungeon 8_342
+  - first:
+      213: -6115759382582257086
+    second: dungeon 8_343
+  - first:
+      213: -7579358478783595763
+    second: dungeon 8_344
+  - first:
+      213: -1650040655224814092
+    second: dungeon 8_345
+  - first:
+      213: -5658650743242434592
+    second: dungeon 8_346
+  - first:
+      213: -6223638582733591869
+    second: dungeon 8_347
+  - first:
+      213: -671308920443594236
+    second: dungeon 8_348
+  - first:
+      213: 2227323113544268767
+    second: dungeon 8_349
+  - first:
+      213: 5645558182308131007
+    second: dungeon 8_350
+  - first:
+      213: -8460697351374269993
+    second: dungeon 8_351
+  - first:
+      213: -8721181988085023243
+    second: dungeon 8_352
+  - first:
+      213: -5164177998167626642
+    second: dungeon 8_353
+  - first:
+      213: -7354833587267665996
+    second: dungeon 8_354
+  - first:
+      213: -628848255104966201
+    second: dungeon 8_355
+  - first:
+      213: -6602488706644576267
+    second: dungeon 8_356
+  - first:
+      213: -2515374186664620654
+    second: dungeon 8_357
+  - first:
+      213: 3805457604312358566
+    second: dungeon 8_358
+  - first:
+      213: 1984735470592891655
+    second: dungeon 8_359
+  - first:
+      213: 8632771282407536058
+    second: dungeon 8_360
+  - first:
+      213: 4820896737792979758
+    second: dungeon 8_361
+  - first:
+      213: -922861270153394310
+    second: dungeon 8_362
+  - first:
+      213: -8826382178112815599
+    second: dungeon 8_363
+  - first:
+      213: -5223844002591411732
+    second: dungeon 8_364
+  - first:
+      213: -784695236641013885
+    second: dungeon 8_365
+  - first:
+      213: -106321060098363924
+    second: dungeon 8_366
+  - first:
+      213: 4638261964954917456
+    second: dungeon 8_367
+  - first:
+      213: -6030138050128395081
+    second: dungeon 8_368
+  - first:
+      213: 7906637976709012548
+    second: dungeon 8_369
+  - first:
+      213: -247705108881273898
+    second: dungeon 8_370
+  - first:
+      213: -5959094943388259037
+    second: dungeon 8_371
+  - first:
+      213: -155994925185822906
+    second: dungeon 8_372
+  - first:
+      213: 8001868463720770254
+    second: dungeon 8_373
+  - first:
+      213: 1505638516970753392
+    second: dungeon 8_374
+  - first:
+      213: -2385660118949679133
+    second: dungeon 8_375
+  - first:
+      213: 7689502827797131331
+    second: dungeon 8_376
+  - first:
+      213: -781155796754594751
+    second: dungeon 8_377
+  - first:
+      213: -8322551125386180198
+    second: dungeon 8_378
+  - first:
+      213: 2428557661721941130
+    second: dungeon 8_379
+  - first:
+      213: 8586658937965117834
+    second: dungeon 8_380
+  - first:
+      213: 8852179092684536850
+    second: dungeon 8_381
+  - first:
+      213: -304820303615585134
+    second: dungeon 8_382
+  - first:
+      213: 589396564214291877
+    second: dungeon 8_383
+  - first:
+      213: -1937529713700160130
+    second: dungeon 8_384
+  - first:
+      213: 620772614049821932
+    second: dungeon 8_385
+  - first:
+      213: 3429832228630687410
+    second: dungeon 8_386
+  - first:
+      213: 777846770160725016
+    second: dungeon 8_387
+  - first:
+      213: -5539429441050371614
+    second: dungeon 8_388
+  - first:
+      213: 871015004905600141
+    second: dungeon 8_389
+  - first:
+      213: -3652127943322137277
+    second: dungeon 8_390
+  - first:
+      213: -1427719908924889345
+    second: dungeon 8_391
+  - first:
+      213: 3990584069298803111
+    second: dungeon 8_392
+  - first:
+      213: 7016208671973142378
+    second: dungeon 8_393
+  - first:
+      213: 4259109852160003114
+    second: dungeon 8_394
+  - first:
+      213: 5746199549605322950
+    second: dungeon 8_395
+  - first:
+      213: -6605498387696302981
+    second: dungeon 8_396
+  - first:
+      213: -4637901444343558935
+    second: dungeon 8_397
+  - first:
+      213: -7083627159079608187
+    second: dungeon 8_398
+  - first:
+      213: 2706642349087901897
+    second: dungeon 8_399
+  - first:
+      213: 1182168016745382829
+    second: dungeon 8_400
+  - first:
+      213: -7411052442678708551
+    second: dungeon 8_401
+  - first:
+      213: 3829011008470369477
+    second: dungeon 8_402
+  - first:
+      213: 4100848625547964739
+    second: dungeon 8_403
+  - first:
+      213: 6793025973576957588
+    second: dungeon 8_404
+  - first:
+      213: 6964193299340983973
+    second: dungeon 8_405
+  - first:
+      213: -8458124689399654324
+    second: dungeon 8_406
+  - first:
+      213: -9049448479261444855
+    second: dungeon 8_407
+  - first:
+      213: -121786500331650429
+    second: dungeon 8_408
+  - first:
+      213: 8409174454736520200
+    second: dungeon 8_409
+  - first:
+      213: 3021258304922782144
+    second: dungeon 8_410
+  - first:
+      213: 4078875172307536404
+    second: dungeon 8_411
+  - first:
+      213: -4976475462269077060
+    second: dungeon 8_412
+  - first:
+      213: 3931444945991392038
+    second: dungeon 8_413
+  - first:
+      213: -7373712795535706372
+    second: dungeon 8_414
+  - first:
+      213: -1017145277668167162
+    second: dungeon 8_415
+  - first:
+      213: 662420338900148152
+    second: dungeon 8_416
+  - first:
+      213: -2832021627299666425
+    second: dungeon 8_417
+  - first:
+      213: 7726163830545008610
+    second: dungeon 8_418
+  - first:
+      213: 4715315953767814201
+    second: dungeon 8_419
+  - first:
+      213: -1584622678615140450
+    second: dungeon 8_420
+  - first:
+      213: 7829577691533528748
+    second: dungeon 8_421
+  - first:
+      213: 5188304758714574373
+    second: dungeon 8_422
+  - first:
+      213: 7949823494813065942
+    second: dungeon 8_423
+  - first:
+      213: 2034621777751041434
+    second: dungeon 8_424
+  - first:
+      213: -4153338379945911431
+    second: dungeon 8_425
+  - first:
+      213: -1097298021177485279
+    second: dungeon 8_426
+  - first:
+      213: -5273801216461883077
+    second: dungeon 8_427
+  - first:
+      213: -1603667984847666784
+    second: dungeon 8_428
+  - first:
+      213: 9186265719736736726
+    second: dungeon 8_429
+  - first:
+      213: 2775519971979529666
+    second: dungeon 8_430
+  - first:
+      213: 2754917462906838317
+    second: dungeon 8_431
+  - first:
+      213: 8474793875422929032
+    second: dungeon 8_432
+  - first:
+      213: 7683770847362246718
+    second: dungeon 8_433
+  - first:
+      213: 5509003971133126770
+    second: dungeon 8_434
+  - first:
+      213: 8978983543841214039
+    second: dungeon 8_435
+  - first:
+      213: 2213241099676191642
+    second: dungeon 8_436
+  - first:
+      213: -6221157163706129617
+    second: dungeon 8_437
+  - first:
+      213: -7072297308078731829
+    second: dungeon 8_438
+  - first:
+      213: -4063742819275517063
+    second: dungeon 8_439
+  - first:
+      213: -2188679943287831615
+    second: dungeon 8_440
+  - first:
+      213: 5637850188327493669
+    second: dungeon 8_441
+  - first:
+      213: 5163227726139301715
+    second: dungeon 8_442
+  - first:
+      213: 7493298845225343759
+    second: dungeon 8_443
+  - first:
+      213: -4780870935018297374
+    second: dungeon 8_444
+  - first:
+      213: -6386751046494605216
+    second: dungeon 8_445
+  - first:
+      213: -6262936989291980819
+    second: dungeon 8_446
+  - first:
+      213: 8061349925967069756
+    second: dungeon 8_447
+  - first:
+      213: -708069500607797135
+    second: dungeon 8_448
+  - first:
+      213: 1455390122332431518
+    second: dungeon 8_449
+  - first:
+      213: 8180242442815307950
+    second: dungeon 8_450
+  - first:
+      213: 82380476122413650
+    second: dungeon 8_451
+  - first:
+      213: -7616671910074121745
+    second: dungeon 8_452
+  - first:
+      213: -1352629211930804758
+    second: dungeon 8_453
+  - first:
+      213: 8754481380722609496
+    second: dungeon 8_454
+  - first:
+      213: 3031720046591639102
+    second: dungeon 8_455
+  - first:
+      213: 6933585743017919477
+    second: dungeon 8_456
+  - first:
+      213: 4759155152420914569
+    second: dungeon 8_457
+  - first:
+      213: 1023944578283354
+    second: dungeon 8_458
+  - first:
+      213: -8282227362853395991
+    second: dungeon 8_459
+  - first:
+      213: -1041690417385002440
+    second: dungeon 8_460
+  - first:
+      213: 7145369036692368750
+    second: dungeon 8_461
+  - first:
+      213: -7034925485849399785
+    second: dungeon 8_462
+  - first:
+      213: 8451223235771348170
+    second: dungeon 8_463
+  - first:
+      213: 6484164562714810645
+    second: dungeon 8_464
+  - first:
+      213: 1308467549919136700
+    second: dungeon 8_465
+  - first:
+      213: -7806039636801498191
+    second: dungeon 8_466
+  - first:
+      213: 3065532203822663150
+    second: dungeon 8_467
+  - first:
+      213: 3711969880743392557
+    second: dungeon 8_468
+  - first:
+      213: 1102289779736762587
+    second: dungeon 8_469
+  - first:
+      213: 6930567222050366321
+    second: dungeon 8_470
+  - first:
+      213: 8528903284732860308
+    second: dungeon 8_471
+  - first:
+      213: 3931652864625130865
+    second: dungeon 8_472
+  - first:
+      213: 2430380702197283610
+    second: dungeon 8_473
+  - first:
+      213: 1692361612368558429
+    second: dungeon 8_474
+  - first:
+      213: 2204937339492350603
+    second: dungeon 8_475
+  - first:
+      213: -8747411635184501692
+    second: dungeon 8_476
+  - first:
+      213: -8252317502200243554
+    second: dungeon 8_477
+  - first:
+      213: -3169864455982562791
+    second: dungeon 8_478
+  - first:
+      213: -2790106425132490532
+    second: dungeon 8_479
+  - first:
+      213: 8987650263759335536
+    second: dungeon 8_480
+  - first:
+      213: -5945384103459998166
+    second: dungeon 8_481
+  - first:
+      213: -7928963965031523086
+    second: dungeon 8_482
+  - first:
+      213: 7081498406729577249
+    second: dungeon 8_483
+  - first:
+      213: -1661544472953203686
+    second: dungeon 8_484
+  - first:
+      213: -406861634221963221
+    second: dungeon 8_485
+  - first:
+      213: 1815987086555523356
+    second: dungeon 8_486
+  - first:
+      213: 4139409728940047879
+    second: dungeon 8_487
+  - first:
+      213: -7087789795631005026
+    second: dungeon 8_488
+  - first:
+      213: -5101495688957760477
+    second: dungeon 8_489
+  - first:
+      213: -2877498244882029859
+    second: dungeon 8_490
+  - first:
+      213: 4310065856990513408
+    second: dungeon 8_491
+  - first:
+      213: 7281692611994377918
+    second: dungeon 8_492
+  - first:
+      213: 6052690611363318082
+    second: dungeon 8_493
+  - first:
+      213: 5571056203799133117
+    second: dungeon 8_494
+  - first:
+      213: 6011849261800958050
+    second: dungeon 8_495
+  - first:
+      213: 1732432932103777486
+    second: dungeon 8_496
+  - first:
+      213: -7792673158901084155
+    second: dungeon 8_497
+  - first:
+      213: -5911233828921395165
+    second: dungeon 8_498
+  - first:
+      213: 1932494542499287935
+    second: dungeon 8_499
+  - first:
+      213: 3564617567272670045
+    second: dungeon 8_500
+  - first:
+      213: 2450033454186628220
+    second: dungeon 8_501
+  - first:
+      213: -4443584955502510918
+    second: dungeon 8_502
+  - first:
+      213: 2273592495672403384
+    second: dungeon 8_503
+  - first:
+      213: 7371388946337568968
+    second: dungeon 8_504
+  - first:
+      213: 6296696123049300963
+    second: dungeon 8_505
+  - first:
+      213: -8883139641503036957
+    second: dungeon 8_506
+  - first:
+      213: 6666664058755886980
+    second: dungeon 8_507
+  - first:
+      213: 8130403217315419571
+    second: dungeon 8_508
+  - first:
+      213: -9130976525904257366
+    second: dungeon 8_509
+  - first:
+      213: -4429980703669632172
+    second: dungeon 8_510
+  - first:
+      213: 6854144757232618219
+    second: dungeon 8_511
+  - first:
+      213: 3666381999797609506
+    second: dungeon 8_512
+  - first:
+      213: 6149427073371561958
+    second: dungeon 8_513
+  - first:
+      213: 292574192122618327
+    second: dungeon 8_514
+  - first:
+      213: 1698338667022491446
+    second: dungeon 8_515
+  - first:
+      213: -3244370879137128502
+    second: dungeon 8_516
+  - first:
+      213: -7257345258864265629
+    second: dungeon 8_517
+  - first:
+      213: 1240341946059518829
+    second: dungeon 8_518
+  - first:
+      213: 5874316222728230347
+    second: dungeon 8_519
+  - first:
+      213: 2560944137462387743
+    second: dungeon 8_520
+  - first:
+      213: 3522503447149226329
+    second: dungeon 8_521
+  - first:
+      213: 7986242909180470039
+    second: dungeon 8_522
+  - first:
+      213: 608320432086536964
+    second: dungeon 8_523
+  - first:
+      213: 1727130129922528936
+    second: dungeon 8_524
+  - first:
+      213: -6037312234982329455
+    second: dungeon 8_525
+  - first:
+      213: -9119999360789667452
+    second: dungeon 8_526
+  - first:
+      213: -8148086164011563255
+    second: dungeon 8_527
+  - first:
+      213: 2672164956559882629
+    second: dungeon 8_528
+  - first:
+      213: 8303527964652227932
+    second: dungeon 8_529
+  - first:
+      213: 6787338351382452213
+    second: dungeon 8_530
+  - first:
+      213: -4880269302632149138
+    second: dungeon 8_531
+  - first:
+      213: -9035394092627114732
+    second: dungeon 8_532
+  - first:
+      213: 5133182024763209306
+    second: dungeon 8_533
+  - first:
+      213: -5392184784644794760
+    second: dungeon 8_534
+  - first:
+      213: -1901725505313205357
+    second: dungeon 8_535
+  - first:
+      213: 3587685212448086710
+    second: dungeon 8_536
+  - first:
+      213: -5062180987840129118
+    second: dungeon 8_537
+  - first:
+      213: -3078802062323064323
+    second: dungeon 8_538
+  - first:
+      213: 8418009150268538614
+    second: dungeon 8_539
+  - first:
+      213: 4725514690481130868
+    second: dungeon 8_540
+  - first:
+      213: -2046856196649200254
+    second: dungeon 8_541
+  - first:
+      213: -346833851723652380
+    second: dungeon 8_542
+  - first:
+      213: 977204533250280289
+    second: dungeon 8_543
+  - first:
+      213: 7153934180442962640
+    second: dungeon 8_544
+  - first:
+      213: 157387033264372671
+    second: dungeon 8_545
+  - first:
+      213: -7097883832422383080
+    second: dungeon 8_546
+  - first:
+      213: 4638411107458843230
+    second: dungeon 8_547
+  - first:
+      213: 9095113629938561803
+    second: dungeon 8_548
+  - first:
+      213: -1765024194237090280
+    second: dungeon 8_549
+  - first:
+      213: -7202412606382271615
+    second: dungeon 8_550
+  - first:
+      213: 2531301990002108277
+    second: dungeon 8_551
+  - first:
+      213: -9207355546264136960
+    second: dungeon 8_552
+  - first:
+      213: 6689456841753345327
+    second: dungeon 8_553
+  - first:
+      213: 2126959670158100624
+    second: dungeon 8_554
+  - first:
+      213: -1770370453981203942
+    second: dungeon 8_555
+  - first:
+      213: 5442797539103508417
+    second: dungeon 8_556
+  - first:
+      213: -713783389706471799
+    second: dungeon 8_557
+  - first:
+      213: -640789258807462923
+    second: dungeon 8_558
+  - first:
+      213: 3330847596984368313
+    second: dungeon 8_559
+  - first:
+      213: 5014708239792048912
+    second: dungeon 8_560
+  - first:
+      213: 50817473165051738
+    second: dungeon 8_561
+  - first:
+      213: 4780893690965199982
+    second: dungeon 8_562
+  - first:
+      213: 5920102457593148618
+    second: dungeon 8_563
+  - first:
+      213: 8588425701838062340
+    second: dungeon 8_564
+  - first:
+      213: -7356382379312039236
+    second: dungeon 8_565
+  - first:
+      213: -1461158296215385150
+    second: dungeon 8_566
+  - first:
+      213: -2108109423533999037
+    second: dungeon 8_567
+  - first:
+      213: 6207212009525013980
+    second: dungeon 8_568
+  - first:
+      213: 6102026219341272054
+    second: dungeon 8_569
+  - first:
+      213: 8112534209930169616
+    second: dungeon 8_570
+  - first:
+      213: -653237479750847797
+    second: dungeon 8_571
+  - first:
+      213: 4717353375131738764
+    second: dungeon 8_572
+  - first:
+      213: 7361943597582640194
+    second: dungeon 8_573
+  - first:
+      213: -6912177545596806420
+    second: dungeon 8_574
+  - first:
+      213: 3520267985945339053
+    second: dungeon 8_575
+  - first:
+      213: -2057238435734850511
+    second: dungeon 8_576
+  - first:
+      213: -1832311773953101045
+    second: dungeon 8_577
+  - first:
+      213: -6296932074678924980
+    second: dungeon 8_578
+  - first:
+      213: -416792557684845239
+    second: dungeon 8_579
+  - first:
+      213: 7569626083238092164
+    second: dungeon 8_580
+  - first:
+      213: -269218606466984859
+    second: dungeon 8_581
+  - first:
+      213: 6193573128956465429
+    second: dungeon 8_582
+  - first:
+      213: 8853655664401716474
+    second: dungeon 8_583
+  - first:
+      213: -4861378704194481199
+    second: dungeon 8_584
+  - first:
+      213: -6268972553121296473
+    second: dungeon 8_585
+  - first:
+      213: -6032718535446314622
+    second: dungeon 8_586
+  - first:
+      213: -7161422036598763337
+    second: dungeon 8_587
+  - first:
+      213: -2184071244591455187
+    second: dungeon 8_588
+  - first:
+      213: -9034640899258238844
+    second: dungeon 8_589
+  - first:
+      213: -4490659149768721658
+    second: dungeon 8_590
+  - first:
+      213: 7543856461749808113
+    second: dungeon 8_591
+  - first:
+      213: 8482742923063210761
+    second: dungeon 8_592
+  - first:
+      213: -7339540702176782480
+    second: dungeon 8_593
+  - first:
+      213: 5368445530294518354
+    second: dungeon 8_594
+  - first:
+      213: 6976828091834560000
+    second: dungeon 8_595
+  - first:
+      213: -6231063126229555388
+    second: dungeon 8_596
+  - first:
+      213: 8306893379126839735
+    second: dungeon 8_597
+  - first:
+      213: 993320172686873850
+    second: dungeon 8_598
+  - first:
+      213: -4762503259299391765
+    second: dungeon 8_599
+  - first:
+      213: 641510276335966780
+    second: dungeon 8_600
+  - first:
+      213: -2523765709384640364
+    second: dungeon 8_601
+  - first:
+      213: 4960691281109611315
+    second: dungeon 8_602
+  - first:
+      213: -3418267674283743248
+    second: dungeon 8_603
+  - first:
+      213: -3405349692911590320
+    second: dungeon 8_604
+  - first:
+      213: -6605775352940495459
+    second: dungeon 8_605
+  - first:
+      213: -3496858471984044283
+    second: dungeon 8_606
+  - first:
+      213: -3591255950579699027
+    second: dungeon 8_607
+  - first:
+      213: 1203429259537124999
+    second: dungeon 8_608
+  - first:
+      213: 6718787326270084707
+    second: dungeon 8_609
+  - first:
+      213: -44494199865746074
+    second: dungeon 8_610
+  - first:
+      213: -1020654392383598638
+    second: dungeon 8_611
+  - first:
+      213: -9111010214468133568
+    second: dungeon 8_612
+  - first:
+      213: 5820789482310737960
+    second: dungeon 8_613
+  - first:
+      213: -1939321090528754082
+    second: dungeon 8_614
+  - first:
+      213: -6079968137622894418
+    second: dungeon 8_615
+  - first:
+      213: -273500175859432059
+    second: dungeon 8_616
+  - first:
+      213: -5581533920225799076
+    second: dungeon 8_617
+  - first:
+      213: -7450935192563177913
+    second: dungeon 8_618
+  - first:
+      213: 5953508034841170826
+    second: dungeon 8_619
+  - first:
+      213: 252821191877967537
+    second: dungeon 8_620
+  - first:
+      213: -2492218467417254959
+    second: dungeon 8_621
+  - first:
+      213: 707492006542158811
+    second: dungeon 8_622
+  - first:
+      213: 5001259075310118909
+    second: dungeon 8_623
+  - first:
+      213: 133015495662267401
+    second: dungeon 8_624
+  - first:
+      213: 7990389784058704389
+    second: dungeon 8_625
+  - first:
+      213: 9180776489194968037
+    second: dungeon 8_626
+  - first:
+      213: 5198152850647368012
+    second: dungeon 8_627
+  - first:
+      213: 7127592949582542059
+    second: dungeon 8_628
+  - first:
+      213: -4416323787773223467
+    second: dungeon 8_629
+  - first:
+      213: 8996321123547712203
+    second: dungeon 8_630
+  - first:
+      213: 1678098149861973366
+    second: dungeon 8_631
+  - first:
+      213: -5202618133189868882
+    second: dungeon 8_632
+  - first:
+      213: -3049888784534714912
+    second: dungeon 8_633
+  - first:
+      213: -7444492491994465572
+    second: dungeon 8_634
+  - first:
+      213: 639529499281026100
+    second: dungeon 8_635
+  - first:
+      213: -8157798566347609376
+    second: dungeon 8_636
+  - first:
+      213: 82777846954137263
+    second: dungeon 8_637
+  - first:
+      213: -7467833718958024756
+    second: dungeon 8_638
+  - first:
+      213: -1726040168451669466
+    second: dungeon 8_639
+  - first:
+      213: 9016214481859447374
+    second: dungeon 8_640
+  - first:
+      213: 2895750969680765756
+    second: dungeon 8_641
+  - first:
+      213: -4435572162639166927
+    second: dungeon 8_642
+  - first:
+      213: 7974465438630305483
+    second: dungeon 8_643
+  - first:
+      213: 4353666828661310384
+    second: dungeon 8_644
+  - first:
+      213: 1265018617183070110
+    second: dungeon 8_645
+  - first:
+      213: 7312619990953015360
+    second: dungeon 8_646
+  - first:
+      213: 4566270855116043852
+    second: dungeon 8_647
+  - first:
+      213: 796955088088422826
+    second: dungeon 8_648
+  - first:
+      213: 8771107325330928343
+    second: dungeon 8_649
+  - first:
+      213: -1973088149204526929
+    second: dungeon 8_650
+  - first:
+      213: -8690624251920036371
+    second: dungeon 8_651
+  - first:
+      213: 3439812462499365744
+    second: dungeon 8_652
+  - first:
+      213: 6965773640880350585
+    second: dungeon 8_653
+  - first:
+      213: 7436170929016442420
+    second: dungeon 8_654
+  - first:
+      213: 2915175973821203170
+    second: dungeon 8_655
+  - first:
+      213: 7132802479590315051
+    second: dungeon 8_656
+  - first:
+      213: -1907187582166792267
+    second: dungeon 8_657
+  - first:
+      213: 5607566860461329313
+    second: dungeon 8_658
+  - first:
+      213: -3212219561380952167
+    second: dungeon 8_659
+  - first:
+      213: 331888116612841470
+    second: dungeon 8_660
+  - first:
+      213: -5677607707664764966
+    second: dungeon 8_661
+  - first:
+      213: -4853770171206196331
+    second: dungeon 8_662
+  - first:
+      213: -586617047791985160
+    second: dungeon 8_663
+  - first:
+      213: 4594678591051128493
+    second: dungeon 8_664
+  - first:
+      213: 2916012653733125325
+    second: dungeon 8_665
+  - first:
+      213: -4785641482694331053
+    second: dungeon 8_666
+  - first:
+      213: 2927079322472100697
+    second: dungeon 8_667
+  - first:
+      213: -6820367390477124706
+    second: dungeon 8_668
+  - first:
+      213: 9027282286992242232
+    second: dungeon 8_669
+  - first:
+      213: -8896063218454927166
+    second: dungeon 8_670
+  - first:
+      213: 3336224158749478306
+    second: dungeon 8_671
+  - first:
+      213: 4963188914421461559
+    second: dungeon 8_672
+  - first:
+      213: -5551012139366324417
+    second: dungeon 8_673
+  - first:
+      213: 2361814699173143504
+    second: dungeon 8_674
+  - first:
+      213: -249540623654507635
+    second: dungeon 8_675
+  - first:
+      213: -4182500200902760687
+    second: dungeon 8_676
+  - first:
+      213: -7245096696332923529
+    second: dungeon 8_677
+  - first:
+      213: 2661186658351123302
+    second: dungeon 8_678
+  - first:
+      213: -7430061241703430450
+    second: dungeon 8_679
+  - first:
+      213: 146709190773803093
+    second: dungeon 8_680
+  - first:
+      213: -4427481812752395207
+    second: dungeon 8_681
+  - first:
+      213: 6552494423340734474
+    second: dungeon 8_682
+  - first:
+      213: -7824382812000230158
+    second: dungeon 8_683
+  - first:
+      213: 8609289213438085457
+    second: dungeon 8_684
+  - first:
+      213: -5008581736362038097
+    second: dungeon 8_685
+  - first:
+      213: -6033419025445556619
+    second: dungeon 8_686
+  - first:
+      213: 6593935759710880251
+    second: dungeon 8_687
+  - first:
+      213: -2635132527370355725
+    second: dungeon 8_688
+  - first:
+      213: 8838305261277867793
+    second: dungeon 8_689
+  - first:
+      213: 2987858912927157878
+    second: dungeon 8_690
+  - first:
+      213: -7716029404267447403
+    second: dungeon 8_691
+  - first:
+      213: 144667501130731241
+    second: dungeon 8_692
+  - first:
+      213: 4488163292414567636
+    second: dungeon 8_693
+  - first:
+      213: 4445178306240950528
+    second: dungeon 8_694
+  - first:
+      213: -2435927760467886087
+    second: dungeon 8_695
+  - first:
+      213: -8957637709118290294
+    second: dungeon 8_696
+  - first:
+      213: 1290407803673872509
+    second: dungeon 8_697
+  - first:
+      213: 587153632557943566
+    second: dungeon 8_698
+  - first:
+      213: -2538667419825311737
+    second: dungeon 8_699
+  - first:
+      213: 279057808758073973
+    second: dungeon 8_700
+  - first:
+      213: -8957451240137212081
+    second: dungeon 8_701
+  - first:
+      213: -1702301051998097745
+    second: dungeon 8_702
+  - first:
+      213: 9169152234778372987
+    second: dungeon 8_703
+  - first:
+      213: -4544345492965626077
+    second: dungeon 8_704
+  - first:
+      213: 7648620333918569351
+    second: dungeon 8_705
+  - first:
+      213: -553732058847829896
+    second: dungeon 8_706
+  - first:
+      213: 6050843936250676050
+    second: dungeon 8_707
+  - first:
+      213: -4265616483445993730
+    second: dungeon 8_708
+  - first:
+      213: 7855291021103260541
+    second: dungeon 8_709
+  - first:
+      213: -3941958943940280813
+    second: dungeon 8_710
+  - first:
+      213: -8704718607190754533
+    second: dungeon 8_711
+  - first:
+      213: -2524858670940782538
+    second: dungeon 8_712
+  - first:
+      213: 474796206611080945
+    second: dungeon 8_713
+  - first:
+      213: -2122234571181768812
+    second: dungeon 8_714
+  - first:
+      213: -5247893938724005248
+    second: dungeon 8_715
+  - first:
+      213: -8412664204401409009
+    second: dungeon 8_716
+  - first:
+      213: 519485653239530036
+    second: dungeon 8_717
+  - first:
+      213: -3325297378996564628
+    second: dungeon 8_718
+  - first:
+      213: 54152845089882832
+    second: dungeon 8_719
+  - first:
+      213: 4826117276062421875
+    second: dungeon 8_720
+  - first:
+      213: 9127238037891623733
+    second: dungeon 8_721
+  - first:
+      213: -2870445078438897226
+    second: dungeon 8_722
+  - first:
+      213: 273286429864990123
+    second: dungeon 8_723
+  - first:
+      213: 5509013653381089314
+    second: dungeon 8_724
+  - first:
+      213: -4141678885987701416
+    second: dungeon 8_725
+  - first:
+      213: -2676246566823618828
+    second: dungeon 8_726
+  - first:
+      213: -4028113237802716856
+    second: dungeon 8_727
+  - first:
+      213: 5495805927783862698
+    second: dungeon 8_728
+  - first:
+      213: -3998262013896985644
+    second: dungeon 8_729
+  - first:
+      213: -3192511233420782500
+    second: dungeon 8_730
+  - first:
+      213: -5171503971657379197
+    second: dungeon 8_731
+  - first:
+      213: 565429975093206195
+    second: dungeon 8_732
+  - first:
+      213: -7244383298517474375
+    second: dungeon 8_733
+  - first:
+      213: 5873101732372708501
+    second: dungeon 8_734
+  - first:
+      213: 8662632920971302640
+    second: dungeon 8_735
+  - first:
+      213: 6098482284714091531
+    second: dungeon 8_736
+  - first:
+      213: 8956363805408376828
+    second: dungeon 8_737
+  - first:
+      213: -2232839757941000287
+    second: dungeon 8_738
+  - first:
+      213: 4377845695603521804
+    second: dungeon 8_739
+  - first:
+      213: 7673887546591460499
+    second: dungeon 8_740
+  - first:
+      213: 5842405872548148625
+    second: dungeon 8_741
+  - first:
+      213: -6980022040910507091
+    second: dungeon 8_742
+  - first:
+      213: -8878277696097986557
+    second: dungeon 8_743
+  - first:
+      213: 6558487069517162458
+    second: dungeon 8_744
+  - first:
+      213: 2930061280860928151
+    second: dungeon 8_745
+  - first:
+      213: 4402516350442132639
+    second: dungeon 8_746
+  - first:
+      213: -5656387512127469257
+    second: dungeon 8_747
+  - first:
+      213: 9055968706393513900
+    second: dungeon 8_748
+  - first:
+      213: -1261867787979657356
+    second: dungeon 8_749
+  - first:
+      213: 5061183805149367094
+    second: dungeon 8_750
+  - first:
+      213: -8865728387033290789
+    second: dungeon 8_751
+  - first:
+      213: 8680683631027290764
+    second: dungeon 8_752
+  - first:
+      213: 1094939845958638218
+    second: dungeon 8_753
+  - first:
+      213: -4831883586214269293
+    second: dungeon 8_754
+  - first:
+      213: -3916769065071198998
+    second: dungeon 8_755
+  - first:
+      213: -6374903680551512144
+    second: dungeon 8_756
+  - first:
+      213: -3834863434383616999
+    second: dungeon 8_757
+  - first:
+      213: -3704137494486859182
+    second: dungeon 8_758
+  - first:
+      213: 5487127755757126063
+    second: dungeon 8_759
+  - first:
+      213: -8280499577345891005
+    second: dungeon 8_760
+  - first:
+      213: 4889673482047379796
+    second: dungeon 8_761
+  - first:
+      213: 514054525063232336
+    second: dungeon 8_762
+  - first:
+      213: -2431368047353870879
+    second: dungeon 8_763
+  - first:
+      213: 6960102553168889489
+    second: dungeon 8_764
+  - first:
+      213: -8152922108700105518
+    second: dungeon 8_765
+  - first:
+      213: 8972908555724902165
+    second: dungeon 8_766
+  - first:
+      213: 2660118140580631636
+    second: dungeon 8_767
+  - first:
+      213: -5131453099856258020
+    second: dungeon 8_768
+  - first:
+      213: -256319583560796888
+    second: dungeon 8_769
+  - first:
+      213: 7972447492810631700
+    second: dungeon 8_770
+  - first:
+      213: 5737945458941004757
+    second: dungeon 8_771
+  - first:
+      213: -2539212194222983634
+    second: dungeon 8_772
+  - first:
+      213: -4011360266276373928
+    second: dungeon 8_773
+  - first:
+      213: -6055427033674675628
+    second: dungeon 8_774
+  - first:
+      213: -2323882555081900882
+    second: dungeon 8_775
+  - first:
+      213: 2444211741783372798
+    second: dungeon 8_776
+  - first:
+      213: -6084341318353864132
+    second: dungeon 8_777
+  - first:
+      213: -5896555852649840568
+    second: dungeon 8_778
+  - first:
+      213: -1722681793270178659
+    second: dungeon 8_779
+  - first:
+      213: -2020072008103593250
+    second: dungeon 8_780
+  - first:
+      213: 1229815415216552186
+    second: dungeon 8_781
+  - first:
+      213: 8939900809431244443
+    second: dungeon 8_782
+  - first:
+      213: 8127798917526556795
+    second: dungeon 8_783
+  - first:
+      213: 267703415681512453
+    second: dungeon 8_784
+  - first:
+      213: 4050520751524016208
+    second: dungeon 8_785
+  - first:
+      213: 2770882173978777974
+    second: dungeon 8_786
+  - first:
+      213: 8237038383246904145
+    second: dungeon 8_787
+  - first:
+      213: -1795954688096735591
+    second: dungeon 8_788
+  - first:
+      213: 6219976021718874286
+    second: dungeon 8_789
+  - first:
+      213: -430655435123608353
+    second: dungeon 8_790
+  - first:
+      213: -1015703359924872127
+    second: dungeon 8_791
+  - first:
+      213: 6823778664816123814
+    second: dungeon 8_792
+  - first:
+      213: 9089093841568891761
+    second: dungeon 8_793
+  - first:
+      213: -6115705127098092881
+    second: dungeon 8_794
+  - first:
+      213: -6120172981810748882
+    second: dungeon 8_795
+  - first:
+      213: -8189311490005659669
+    second: dungeon 8_796
+  - first:
+      213: 3968780489168830196
+    second: dungeon 8_797
+  - first:
+      213: 7787652027218861875
+    second: dungeon 8_798
+  - first:
+      213: 3159843427070944442
+    second: dungeon 8_799
+  - first:
+      213: -5080188556507497428
+    second: dungeon 8_800
+  - first:
+      213: 8830440050293336609
+    second: dungeon 8_801
+  - first:
+      213: 2929289442337807008
+    second: dungeon 8_802
+  - first:
+      213: -3933952164282317800
+    second: dungeon 8_803
+  - first:
+      213: 150959744712085685
+    second: dungeon 8_804
+  - first:
+      213: -8211583359757416194
+    second: dungeon 8_805
+  - first:
+      213: 6661812843426108603
+    second: dungeon 8_806
+  - first:
+      213: 6665657142620575002
+    second: dungeon 8_807
+  - first:
+      213: -1254020043800211289
+    second: dungeon 8_808
+  - first:
+      213: 4421764266311477072
+    second: dungeon 8_809
+  - first:
+      213: -5568664138292758959
+    second: dungeon 8_810
+  - first:
+      213: -2413732889245083073
+    second: dungeon 8_811
+  - first:
+      213: -2839046720421136358
+    second: dungeon 8_812
+  - first:
+      213: 5741218816627963769
+    second: dungeon 8_813
+  - first:
+      213: -3462772544159670861
+    second: dungeon 8_814
+  - first:
+      213: -9066711815715673357
+    second: dungeon 8_815
+  - first:
+      213: 8105625756927727617
+    second: dungeon 8_816
+  - first:
+      213: 6249717431736415885
+    second: dungeon 8_817
+  - first:
+      213: -5678209066060959556
+    second: dungeon 8_818
+  - first:
+      213: 7104324521777294547
+    second: dungeon 8_819
+  - first:
+      213: 6870615231126505720
+    second: dungeon 8_820
+  - first:
+      213: -5060685930613762716
+    second: dungeon 8_821
+  - first:
+      213: 1806998342297787575
+    second: dungeon 8_822
+  - first:
+      213: -308085608860360067
+    second: dungeon 8_823
+  - first:
+      213: -7043384715426374045
+    second: dungeon 8_824
+  - first:
+      213: 2335970502845537719
+    second: dungeon 8_825
+  - first:
+      213: 8650904613964484921
+    second: dungeon 8_826
+  - first:
+      213: -4377199694069554719
+    second: dungeon 8_827
+  - first:
+      213: -2430044400021555834
+    second: dungeon 8_828
+  - first:
+      213: -1287273469187193460
+    second: dungeon 8_829
+  - first:
+      213: 197910501197109870
+    second: dungeon 8_830
+  - first:
+      213: 6867323500046369268
+    second: dungeon 8_831
+  - first:
+      213: -621935812925420929
+    second: dungeon 8_832
+  - first:
+      213: -1769336203791978721
+    second: dungeon 8_833
+  - first:
+      213: -529251902189795603
+    second: dungeon 8_834
+  - first:
+      213: 8696289160524685633
+    second: dungeon 8_835
+  - first:
+      213: 7345760303142409304
+    second: dungeon 8_836
+  - first:
+      213: 1875207418731747075
+    second: dungeon 8_837
+  - first:
+      213: 6188645386501973555
+    second: dungeon 8_838
+  - first:
+      213: 4816487941844642091
+    second: dungeon 8_839
+  - first:
+      213: -3836459064504870462
+    second: dungeon 8_840
+  - first:
+      213: -7796873818777731493
+    second: dungeon 8_841
+  - first:
+      213: 9216559968308458815
+    second: dungeon 8_842
+  - first:
+      213: -292372183710923096
+    second: dungeon 8_843
+  - first:
+      213: -3621594986213441739
+    second: dungeon 8_844
+  - first:
+      213: 3940841152319507946
+    second: dungeon 8_845
+  - first:
+      213: 2712339212125245279
+    second: dungeon 8_846
+  - first:
+      213: -280848637991547850
+    second: dungeon 8_847
+  - first:
+      213: -5642365177256838387
+    second: dungeon 8_848
+  - first:
+      213: 4080760281081264747
+    second: dungeon 8_849
+  - first:
+      213: -5175196375126864952
+    second: dungeon 8_850
+  - first:
+      213: -6505440127159228966
+    second: dungeon 8_851
+  - first:
+      213: -228775119295931442
+    second: dungeon 8_852
+  - first:
+      213: -4447564050374262718
+    second: dungeon 8_853
+  - first:
+      213: 832225373494418833
+    second: dungeon 8_854
+  - first:
+      213: -2728962898115435805
+    second: dungeon 8_855
+  - first:
+      213: 8144310042043931111
+    second: dungeon 8_856
+  - first:
+      213: 3449288270678174664
+    second: dungeon 8_857
+  - first:
+      213: 4119864932833956549
+    second: dungeon 8_858
+  - first:
+      213: -8743330570284754777
+    second: dungeon 8_859
+  - first:
+      213: 2198852118000162378
+    second: dungeon 8_860
+  - first:
+      213: 5365009723133256239
+    second: dungeon 8_861
+  - first:
+      213: 3800337565721007528
+    second: dungeon 8_862
+  - first:
+      213: 8539670062015461710
+    second: dungeon 8_863
+  - first:
+      213: -1127983180545394164
+    second: dungeon 8_864
+  - first:
+      213: 5263493651404888472
+    second: dungeon 8_865
+  - first:
+      213: 5417831373702830930
+    second: dungeon 8_866
+  - first:
+      213: -1423644159085551519
+    second: dungeon 8_867
+  - first:
+      213: 613097740905991140
+    second: dungeon 8_868
+  - first:
+      213: 3231114188730289156
+    second: dungeon 8_869
+  - first:
+      213: -1544333741677240328
+    second: dungeon 8_870
+  - first:
+      213: -3465356691204110981
+    second: dungeon 8_871
+  - first:
+      213: -9065195515671028520
+    second: dungeon 8_872
+  - first:
+      213: 5237846912317856504
+    second: dungeon 8_873
+  - first:
+      213: -3544824188781496508
+    second: dungeon 8_874
+  - first:
+      213: -7027418789414245726
+    second: dungeon 8_875
+  - first:
+      213: -5722392968952409586
+    second: dungeon 8_876
+  - first:
+      213: -2103038367503921038
+    second: dungeon 8_877
+  - first:
+      213: 4968704270316154045
+    second: dungeon 8_878
+  - first:
+      213: 9141100102166414474
+    second: dungeon 8_879
+  - first:
+      213: -2609031432032241723
+    second: dungeon 8_880
+  - first:
+      213: 6837939917776647976
+    second: dungeon 8_881
+  - first:
+      213: 5368157450559345484
+    second: dungeon 8_882
+  - first:
+      213: -6942817067193352437
+    second: dungeon 8_883
+  - first:
+      213: 112175226985198786
+    second: dungeon 8_884
+  - first:
+      213: -6167875609451908796
+    second: dungeon 8_885
+  - first:
+      213: 3455756718644639870
+    second: dungeon 8_886
+  - first:
+      213: 4429718340903932258
+    second: dungeon 8_887
+  - first:
+      213: -6551085805495597995
+    second: dungeon 8_888
+  - first:
+      213: -4314781800172804367
+    second: dungeon 8_889
+  - first:
+      213: -696964686651839421
+    second: dungeon 8_890
+  - first:
+      213: 4126847052998567229
+    second: dungeon 8_891
+  - first:
+      213: 1755937334514391970
+    second: dungeon 8_892
+  - first:
+      213: -5230180173938041595
+    second: dungeon 8_893
+  - first:
+      213: -743288614220819801
+    second: dungeon 8_894
+  - first:
+      213: 2104246341573954346
+    second: dungeon 8_895
+  - first:
+      213: -7301257752024899416
+    second: dungeon 8_896
+  - first:
+      213: 3680179297918244904
+    second: dungeon 8_897
+  - first:
+      213: 1145768994936473268
+    second: dungeon 8_898
+  - first:
+      213: 1654182652880609914
+    second: dungeon 8_899
+  - first:
+      213: -4226857872144511282
+    second: dungeon 8_900
+  - first:
+      213: -3551957615859464305
+    second: dungeon 8_901
+  - first:
+      213: -7722404707440067837
+    second: dungeon 8_902
+  - first:
+      213: 3248727747253414503
+    second: dungeon 8_903
+  - first:
+      213: 4373082346291927880
+    second: dungeon 8_904
+  - first:
+      213: 654335977090228383
+    second: dungeon 8_905
+  - first:
+      213: 4442359160260837153
+    second: dungeon 8_906
+  - first:
+      213: 1208574556410442324
+    second: dungeon 8_907
+  - first:
+      213: -6443132008264444840
+    second: dungeon 8_908
+  - first:
+      213: -535086729601985960
+    second: dungeon 8_909
+  - first:
+      213: 4643295916221077764
+    second: dungeon 8_910
+  - first:
+      213: 7059758022000006953
+    second: dungeon 8_911
+  - first:
+      213: 4639998122375824125
+    second: dungeon 8_912
+  - first:
+      213: 7622450345653539738
+    second: dungeon 8_913
+  - first:
+      213: -5524768525280266743
+    second: dungeon 8_914
+  - first:
+      213: -5724948926234889421
+    second: dungeon 8_915
+  - first:
+      213: -87092761180417429
+    second: dungeon 8_916
+  - first:
+      213: -3750308709192601781
+    second: dungeon 8_917
+  - first:
+      213: -2066091481855477871
+    second: dungeon 8_918
+  - first:
+      213: -7558013049220019142
+    second: dungeon 8_919
+  - first:
+      213: 1265196189353215832
+    second: dungeon 8_920
+  - first:
+      213: -2721134641999871351
+    second: dungeon 8_921
+  - first:
+      213: 4071935600705427736
+    second: dungeon 8_922
+  - first:
+      213: -321352684126327574
+    second: dungeon 8_923
+  - first:
+      213: -4624608530466225132
+    second: dungeon 8_924
+  - first:
+      213: -3472473883783797831
+    second: dungeon 8_925
+  - first:
+      213: 6695929951751977860
+    second: dungeon 8_926
+  - first:
+      213: -1617520597010228628
+    second: dungeon 8_927
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dungeon 8_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 260
+        width: 80
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953396b002714fe60800000000000000
+      internalID: 7995040664887309145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 292
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0abb00466ec711c0800000000000000
+      internalID: -4532927561368618483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 304
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14934102a7f33bc30800000000000000
+      internalID: 4373909456863639873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfeaecdb838fc700800000000000000
+      internalID: 562813115174678483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 304
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b779a2faf642850800000000000000
+      internalID: 6351324172623772443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 244
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b296e850f9215c0800000000000000
+      internalID: -4246156652444046437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_6
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 252
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ee8bdb6669cc470800000000000000
+      internalID: 8416267171662458489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 268
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36a130e660982de0800000000000000
+      internalID: -1357676516129790405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 284
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c76fcc3fb1ffa90800000000000000
+      internalID: -7278067738877723589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_9
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 256
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f1b258edc2ab5c0800000000000000
+      internalID: -4198994368341008588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 256
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825f1b3a6a0cfe000800000000000000
+      internalID: 67484341377299752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_11
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 256
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b603e5fce11cb98c0800000000000000
+      internalID: -3991384306661576597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 259
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b228a235138bae0800000000000000
+      internalID: -1533421439854433495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 248
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4987cf10501807d0800000000000000
+      internalID: -2952091619424761523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_14
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 248
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0a468d5c58454d0800000000000000
+      internalID: -3146743154839609166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 228
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0963b4ed1282dd0f0800000000000000
+      internalID: -1090671408825289072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 228
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee40c11221065300800000000000000
+      internalID: 240380875949231851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_17
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 237
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328f2e6ae6203f0a0800000000000000
+      internalID: -6849127934030841821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 234
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493678a1615745de0800000000000000
+      internalID: -1345321650882124908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 233
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4562ca83c9fb4b4f0800000000000000
+      internalID: -813814954960607660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 228
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3fe53ab43999950800000000000000
+      internalID: 6456353493885055978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1025bb086e8c4850800000000000000
+      internalID: 6362616951091830810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 160
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8353a5a5571ebd0800000000000000
+      internalID: -2602670078722492221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_23
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 176
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6400d6af3256dd1b0800000000000000
+      internalID: -5630232753943543738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_24
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 204
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cd3c1c3f103b680800000000000000
+      internalID: -8740640305356481380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 204
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b6761345b083120800000000000000
+      internalID: 2393675658181438268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_26
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 204
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf395afd73a93b80800000000000000
+      internalID: -8414514667298668608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_27
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 176
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3ad1baf677a3df0800000000000000
+      internalID: -199715911968644164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_28
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 195
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834e8f6af15a6a0b0800000000000000
+      internalID: -5717701121536367560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_29
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 182
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f404ad875d30f27e0800000000000000
+      internalID: -1788206311652310961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_30
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 182
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537fbf5fc02946c20800000000000000
+      internalID: 3198842219704088373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_31
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765cc199769edd8b0800000000000000
+      internalID: -5125684169718053529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 140
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3883a728e628608d0800000000000000
+      internalID: -2880471500509792125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_33
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 140
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51e336d0ad865460800000000000000
+      internalID: 7230121973717918044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_34
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 156
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ab1edaaac01e900800000000000000
+      internalID: 711864143302474367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 156
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf262e0fba4473b0800000000000000
+      internalID: -5515701459185422391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 68
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9613d2a594d191a0800000000000000
+      internalID: -6804423822833150307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_37
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 52
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc7f361bac6896f0800000000000000
+      internalID: -677672261850792749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_38
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 68
+        width: 16
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c243ff602737b5bb0800000000000000
+      internalID: -4946232832155503572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d34441876a938740800000000000000
+      internalID: 5153132167983023056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon 8_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 24
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46d8070fe82bef80800000000000000
+      internalID: -8076316499678538166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

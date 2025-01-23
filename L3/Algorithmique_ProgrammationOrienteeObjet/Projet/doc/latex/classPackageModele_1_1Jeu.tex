@@ -1,0 +1,310 @@
+\hypertarget{classPackageModele_1_1Jeu}{}\doxysection{Package\+Modele.\+Jeu Class Reference}
+\label{classPackageModele_1_1Jeu}\index{PackageModele.Jeu@{PackageModele.Jeu}}
+
+
+Inheritance diagram for Package\+Modele.\+Jeu\+:
+% FIG 0
+
+
+Collaboration diagram for Package\+Modele.\+Jeu\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPackageModele_1_1Jeu_a819c55b74be80a19abc8f2337151ea6c}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Getter de l\textquotesingle{}attribut size de la classe \mbox{\hyperlink{classPackageModele_1_1Jeu}{Jeu}}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_ad3eecea5f0edfdbac37d7539c4ca54c5}{est\+Symbole}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Vérifie que la case est un symbole. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_ac4e0830a2e3f99ca0878d0412bc72083}{voisin\+Haut}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Avant, \mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Vérifie que la case d\textquotesingle{}avant est un voisin du haut. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_a2cc20201af7af464a75a9f9bf8253cdf}{voisin\+Bas}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Avant, \mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Vérifie que la case d\textquotesingle{}avant est un voisin du bas. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_a2c7fd45c43b7c768e184fd2000a29f04}{voisin\+Gauche}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Avant, \mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Vérifie que la case d\textquotesingle{}avant est un voisin de gauche. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_a67380e2ca6153d550c3ceb4f8e9bdf6d}{voisin\+Droite}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Avant, \mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Vérifie que la case d\textquotesingle{}avant est un voisin de droite. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_aa67639727554c3e77074ecb537d04ad0}{voisin}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Avant, \mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Vérifie que la case d\textquotesingle{}avant est un voisin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPackageModele_1_1Jeu_a2aab3baebf77e2aaa54a8006692d5425}{clic\+Case}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction appelée lorsque le joueur clique sur une case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPackageModele_1_1Jeu_ae0f37a65090faef02b039f4e8f7b9368}{entrer\+Case}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction appelée lorsqu\textquotesingle{}on entre dans une case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPackageModele_1_1Jeu_a23b832da15adcf246f1fb8d6da269bdf}{relacher\+Clic}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction appelée lorsqu\textquotesingle{}on relâche le clic de la souris. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_ab2af551c74ef94c1285d29f53816ca61}\label{classPackageModele_1_1Jeu_ab2af551c74ef94c1285d29f53816ca61}} 
+void \mbox{\hyperlink{classPackageModele_1_1Jeu_ab2af551c74ef94c1285d29f53816ca61}{changer\+Etat\+Chemin}} ()
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}état des cases modèles appartenant à un chemin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPackageModele_1_1Chemin}{Chemin}} \mbox{\hyperlink{classPackageModele_1_1Jeu_aba6c5ebce0bbf280b9c7badf07badfec}{debut\+Chemin}} (\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}} case\+Actuelle)
+\begin{DoxyCompactList}\small\item\em Débute un chemin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPackageModele_1_1Jeu_a55aa5786188c7920ecc31562245c4fe6}{supprimer\+Chemin}} (int ind)
+\begin{DoxyCompactList}\small\item\em Supprime le chemin d\textquotesingle{}indice donné. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classPackageModele_1_1Jeu_a5f1796cc8c179ff171cac748198e468d}{verifier\+Victoire}} ()
+\begin{DoxyCompactList}\small\item\em Vérifie la victoire du joueur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPackageModele_1_1Jeu_a72e4fb830a8735020177983ffcafd63e}{Jeu}} (int \+\_\+size)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a4d882db862395ca134a451d1ebe0c7e5}\label{classPackageModele_1_1Jeu_a4d882db862395ca134a451d1ebe0c7e5}} 
+\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries \+\_\+tab\+CaseM}
+\item 
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_af2a6ee2eb73aeb257611c1f1742b628e}\label{classPackageModele_1_1Jeu_af2a6ee2eb73aeb257611c1f1742b628e}} 
+\mbox{\hyperlink{classPackageModele_1_1Chemin}{Chemin}}\mbox{[}$\,$\mbox{]} {\bfseries tab\+Chemin}
+\item 
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_afd10d37ad25e8344854d1f91d5ffffb9}\label{classPackageModele_1_1Jeu_afd10d37ad25e8344854d1f91d5ffffb9}} 
+boolean {\bfseries victoire}
+\item 
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a6abb18daf00c03f6efd6e3f98d4c80ae}\label{classPackageModele_1_1Jeu_a6abb18daf00c03f6efd6e3f98d4c80ae}} 
+boolean {\bfseries menu\+Ouvert}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a72e4fb830a8735020177983ffcafd63e}\label{classPackageModele_1_1Jeu_a72e4fb830a8735020177983ffcafd63e}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!Jeu@{Jeu}}
+\index{Jeu@{Jeu}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{Jeu()}{Jeu()}}
+{\footnotesize\ttfamily Package\+Modele.\+Jeu.\+Jeu (\begin{DoxyParamCaption}\item[{int}]{\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de la classe jeu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & taille de la grille de jeu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a2aab3baebf77e2aaa54a8006692d5425}\label{classPackageModele_1_1Jeu_a2aab3baebf77e2aaa54a8006692d5425}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!clicCase@{clicCase}}
+\index{clicCase@{clicCase}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{clicCase()}{clicCase()}}
+{\footnotesize\ttfamily void Package\+Modele.\+Jeu.\+clic\+Case (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fonction appelée lorsque le joueur clique sur une case. 
+
+Crée un chemin si la case est un symbole n\textquotesingle{}ayant pas de chemin, si le symbole a déjà un chemin, le supprime. Supprime aussi le chemin si on clique sur une case appartenant à un chemin, sinon ne fais rien si la case est vide. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordonnée x de la case \\
+\hline
+{\em y} & Coordonnée y de la case \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_aba6c5ebce0bbf280b9c7badf07badfec}\label{classPackageModele_1_1Jeu_aba6c5ebce0bbf280b9c7badf07badfec}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!debutChemin@{debutChemin}}
+\index{debutChemin@{debutChemin}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{debutChemin()}{debutChemin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPackageModele_1_1Chemin}{Chemin}} Package\+Modele.\+Jeu.\+debut\+Chemin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Débute un chemin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Actuelle} & La 1ère case à ajouter au chemin construit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le chemin construit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_ae0f37a65090faef02b039f4e8f7b9368}\label{classPackageModele_1_1Jeu_ae0f37a65090faef02b039f4e8f7b9368}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!entrerCase@{entrerCase}}
+\index{entrerCase@{entrerCase}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{entrerCase()}{entrerCase()}}
+{\footnotesize\ttfamily void Package\+Modele.\+Jeu.\+entrer\+Case (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fonction appelée lorsqu\textquotesingle{}on entre dans une case. 
+
+Ajoute la case si le joueur est en train de maintenir le clic et la case est valide (n\textquotesingle{}appartient pas à un autre chemin et est voisine de la case d\textquotesingle{}avant). Si on entre dans une case symbole différente de celle du début du chemin, n\textquotesingle{}ajoute pas la case. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordonnée x de la case \\
+\hline
+{\em y} & Coordonnée y de la case \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_ad3eecea5f0edfdbac37d7539c4ca54c5}\label{classPackageModele_1_1Jeu_ad3eecea5f0edfdbac37d7539c4ca54c5}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!estSymbole@{estSymbole}}
+\index{estSymbole@{estSymbole}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{estSymbole()}{estSymbole()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+est\+Symbole (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie que la case est un symbole. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Actuelle} & Case où on effectue la vérification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case est un symbole, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a819c55b74be80a19abc8f2337151ea6c}\label{classPackageModele_1_1Jeu_a819c55b74be80a19abc8f2337151ea6c}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!getSize@{getSize}}
+\index{getSize@{getSize}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Package\+Modele.\+Jeu.\+get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de l\textquotesingle{}attribut size de la classe \mbox{\hyperlink{classPackageModele_1_1Jeu}{Jeu}}. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a23b832da15adcf246f1fb8d6da269bdf}\label{classPackageModele_1_1Jeu_a23b832da15adcf246f1fb8d6da269bdf}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!relacherClic@{relacherClic}}
+\index{relacherClic@{relacherClic}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{relacherClic()}{relacherClic()}}
+{\footnotesize\ttfamily void Package\+Modele.\+Jeu.\+relacher\+Clic (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fonction appelée lorsqu\textquotesingle{}on relâche le clic de la souris. 
+
+Vérifie que le chemin ajouté est valide, puis si c\textquotesingle{}est le cas, change l\textquotesingle{}état des cases modèles, puis vérifie si le joueur a gagné ou non. A la fin, notifie l\textquotesingle{}observer des modifications de l\textquotesingle{}état des cases modèles. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordonnée x de la case \\
+\hline
+{\em y} & Coordonnée y de la case \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a55aa5786188c7920ecc31562245c4fe6}\label{classPackageModele_1_1Jeu_a55aa5786188c7920ecc31562245c4fe6}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!supprimerChemin@{supprimerChemin}}
+\index{supprimerChemin@{supprimerChemin}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{supprimerChemin()}{supprimerChemin()}}
+{\footnotesize\ttfamily void Package\+Modele.\+Jeu.\+supprimer\+Chemin (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Supprime le chemin d\textquotesingle{}indice donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & Indice du chemin à supprimer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a5f1796cc8c179ff171cac748198e468d}\label{classPackageModele_1_1Jeu_a5f1796cc8c179ff171cac748198e468d}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!verifierVictoire@{verifierVictoire}}
+\index{verifierVictoire@{verifierVictoire}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{verifierVictoire()}{verifierVictoire()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+verifier\+Victoire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie la victoire du joueur. 
+
+Pour vérifier si le joueur a gagné, vérifie que la taille de tous les chemins = la taille de la grille du jeu. \mbox{\Hypertarget{classPackageModele_1_1Jeu_aa67639727554c3e77074ecb537d04ad0}\label{classPackageModele_1_1Jeu_aa67639727554c3e77074ecb537d04ad0}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!voisin@{voisin}}
+\index{voisin@{voisin}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{voisin()}{voisin()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+voisin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Avant,  }\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie que la case d\textquotesingle{}avant est un voisin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Avant} & La case avant. \\
+\hline
+{\em case\+Actuelle} & La case actuelle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case est un voisin, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a2cc20201af7af464a75a9f9bf8253cdf}\label{classPackageModele_1_1Jeu_a2cc20201af7af464a75a9f9bf8253cdf}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!voisinBas@{voisinBas}}
+\index{voisinBas@{voisinBas}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{voisinBas()}{voisinBas()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+voisin\+Bas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Avant,  }\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie que la case d\textquotesingle{}avant est un voisin du bas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Avant} & La case avant. \\
+\hline
+{\em case\+Actuelle} & La case actuelle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case avant est un voisin du bas de la case actuelle, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a67380e2ca6153d550c3ceb4f8e9bdf6d}\label{classPackageModele_1_1Jeu_a67380e2ca6153d550c3ceb4f8e9bdf6d}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!voisinDroite@{voisinDroite}}
+\index{voisinDroite@{voisinDroite}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{voisinDroite()}{voisinDroite()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+voisin\+Droite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Avant,  }\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie que la case d\textquotesingle{}avant est un voisin de droite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Avant} & La case avant. \\
+\hline
+{\em case\+Actuelle} & La case actuelle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case avant est un voisin de droite de la case actuelle, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_a2c7fd45c43b7c768e184fd2000a29f04}\label{classPackageModele_1_1Jeu_a2c7fd45c43b7c768e184fd2000a29f04}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!voisinGauche@{voisinGauche}}
+\index{voisinGauche@{voisinGauche}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{voisinGauche()}{voisinGauche()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+voisin\+Gauche (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Avant,  }\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie que la case d\textquotesingle{}avant est un voisin de gauche. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Avant} & La case avant. \\
+\hline
+{\em case\+Actuelle} & La case actuelle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case avant est un voisin de gauche de la case actuelle, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPackageModele_1_1Jeu_ac4e0830a2e3f99ca0878d0412bc72083}\label{classPackageModele_1_1Jeu_ac4e0830a2e3f99ca0878d0412bc72083}} 
+\index{PackageModele.Jeu@{PackageModele.Jeu}!voisinHaut@{voisinHaut}}
+\index{voisinHaut@{voisinHaut}!PackageModele.Jeu@{PackageModele.Jeu}}
+\doxysubsubsection{\texorpdfstring{voisinHaut()}{voisinHaut()}}
+{\footnotesize\ttfamily boolean Package\+Modele.\+Jeu.\+voisin\+Haut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Avant,  }\item[{\mbox{\hyperlink{classPackageModele_1_1ModeleCase}{Modele\+Case}}}]{case\+Actuelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie que la case d\textquotesingle{}avant est un voisin du haut. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em case\+Avant} & La case avant. \\
+\hline
+{\em case\+Actuelle} & La case actuelle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la case avant est un voisin du haut de la case actuelle, faux sinon. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/chopperman/lifap7\+\_\+projet/src/\+Package\+Modele/\mbox{\hyperlink{Jeu_8java}{Jeu.\+java}}\end{DoxyCompactItemize}

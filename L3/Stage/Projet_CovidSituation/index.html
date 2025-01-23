@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="lib/d3.min.js"></script>
+
+        <style>
+            td, th{padding: 1px 4px;
+                border: 1px white solid;
+            }
+
+            body{background-color: black;
+                color: white;
+                width:100%;
+                height: 100%;
+            }
+
+            svg{border: 1px white solid;
+                background-color: royalblue;
+                display: block;
+                margin:auto;
+            }
+            
+            p{text-align: center;
+                font-size: medium;
+            }
+
+            form{text-align:center;}
+
+            footer{
+                margin:auto;
+                border: 2px white solid;
+                border-radius: 10px;
+                width: 90%;
+            }
+        </style>
+
+    </head>
+
+
+
+    <body>
+        <a id="haut"></a>
+
+        <header> 
+            <h1>Situation COVID-19 dans le monde </h1>
+        </header>
+
+        <svg id="map" >
+            <!-- Ici se trouve la map -->
+        </svg>
+
+        </br>
+
+        <form>
+            <select id="choix_map" onchange="choix_option_map(this.value)">
+                <option selected value="total_confirmed">Cas COVID confirmés</option>
+                <option value="total_deaths">Décès total</option>
+                <option value="total_recovered">Rétablis </option>
+                <option value="active_cases">Malades actifs</option>
+                <option value="serious_or_critical">Malades critiques</option>
+                <option value="total_cases_per_1m_population">Taux malades sur 1M</option>
+                <option value="total_deaths_per_1m_population">Taux mortalité sur 1M</option>
+                <option value="total_tests">Tests effectués</option>
+                <option value="total_tests_per_1m_population">Taux de tests effectués sur 1M</option>
+            </select>
+            
+        </form>
+
+        </br>
+        <hr>
+        </br>
+
+         
+        <div id="pays">
+            <!-- Ici se trouve l'affichage des infos du pays  -->
+        </div>
+
+        </br>
+
+        <div id="graph">
+            <!-- Ici se trouve le graphique du pays cliqué-->
+        </div>
+
+        </br>
+        
+        <form>
+            <select id="choix_graph" onchange="choix_option_graph(this.value)">
+                <option selected value="daily_new_cases">Nouveaux cas quotidiens</option>
+                <option value="cumulative_total_cases">Cas total cumulé</option>
+                <option value="active_cases">Malades actifs </option>
+                <option value="daily_new_deaths">Nouveaux décès quotidiens</option>
+                <option value="cumulative_total_deaths">Décès total cumulé</option>
+            </select>
+            
+        </form>
+        
+        </br>
+        <hr>
+        </br>
+
+        <h2> Tableau situation COVID par pays au 14/05/2022</h2>
+        <table id="table_sum">
+            <thead id="table_sum_thead">
+                 <!-- En-tete du tableau -->
+            </thead>
+            <tbody id="table_sum_tbody">
+                <!-- Contenu du tableau -->
+            </tbody>
+            
+        </table>
+
+
+
+        <script>
+            ///Fonctions des choix utilisateur
+
+            //Choix de la map
+            function choix_option_map(valeur){
+                tmp_selection_map = valeur
+                construire_map(tmp_selection_map);
+            }
+
+            //Choix du graphique
+            function choix_option_graph(valeur){
+                tmp_selection_graph = valeur;
+                construire_graph(tmp_selection_pays, tmp_selection_graph);
+            }
+
+            //variables temporaires des choix utilisateur
+            var tmp_selection_pays;
+            var tmp_selection_graph = "daily_new_cases";
+            var tmp_selection_map = "total_confirmed";
+
+            ////////////////////Construction Mappemonde /////////////////////////////
+
+            // Dimensions de la map
+            const width = 800; const height = 600;
+            const legendCellSize = 25;
+            const colors = ['#ffb3b3', '#ff9999', '#ff8080', '#ff6666', '#ff4d4d', '#ff3333', '#ff1a1a', '#ff0000', '#e60000', '#cc0000', '#b30000', '#990000', '#800000', '#660000', '#4d0000', '#330000'];
+            
+            var svg = d3.select("#map")
+                .attr("width", width)
+                .attr("height", height)
+            ;
+
+            //Construction de la légende la map
+            var legend = svg.append('g')
+            .attr('transform', 'translate(40,50)');
+
+            legend.selectAll()
+                .data(d3.range(colors.length))
+                .enter()
+                .append('svg:rect')
+                .attr('height', legendCellSize + 'px')
+                .attr('width', legendCellSize + 'px')
+                .attr('x', d => 330 + d * legendCellSize)
+                .attr('y', 500)
+                .style("fill", d => colors[d])
+            ;
+            const min=0; const max=1000000;
+            var legendScale = d3.scaleLinear().domain([min,max])
+                .range([0, colors.length * legendCellSize])
+            ;
+
+            var legendAxis = legend.append('g')
+                .attr("id", "axis")
+                .call(d3.axisBottom(legendScale))
+                .attr("transform", "translate(330,525)")
+            ;
+
+            //Construction de la map par défaut
+            construire_map(tmp_selection_map);
+            
+
+            //Fonction qui contruit la map
+            function construire_map(choix_affichage_map){
+
+                //Supprime l'ancienne map si besoin
+                d3.select("#carte").remove();
+
+                // Construction de la dimension des pays
+                var projection = d3.geoMercator().translate([width/2, 1.25*height/2]).scale([125]);
+                var path = d3.geoPath().projection(projection);
+                
+                //Construction de la carte
+                const carte = svg.append('g')
+                    .attr("id", "carte")
+                ;
+
+                var promises = [];
+                promises.push(d3.json("data/countries.geojson"));
+                promises.push(d3.csv("data/worldometer_coronavirus_summary_data.csv"));
+
+                Promise.all(promises).then(function(values){
+
+                    //variables qui contiennent les donnees
+                    const geojson = values[0];
+                    const data = values[1];
+
+                    //variable temporaire pour recuperer la couleur d'un element pointé
+                    var tmp_couleur;
+
+                    //Dessin de la map
+                    carte.selectAll("path")
+                    .data(geojson.features)
+                    .enter()
+                    .append("path")
+                    .attr("d", path)
+                    .attr("id", d => "code" + d.properties.ADMIN)
+                    .attr("class", "country")
+                    .attr('fill', function(d){
+                        //Coloration des pays
+                        var pays = indexCountry(data, d.properties.ADMIN);
+                        var nbCas = choix_option_map_data(data, pays, choix_affichage_map);
+                        return choixColor(nbCas);
+                    })
+
+                    /// Actions de la souris
+
+                    //Mouseover : si la souris passe au-dessus d'un pays
+                    .on("mouseover", function(){
+
+                        //recupere la couleur de depart de l'element pointé
+                        var couleurdepart = d3.select(this).attr('fill');
+                        tmp_couleur = couleurdepart;
+
+                        //Couleur de l'element pointé
+                        d3.select(this).style("fill", "green");
+                
+                        //Affichage Rectangle
+                        svg.append("rect")
+                            .attr("id", "rect_pays")
+                            .attr("x", "0")
+                            .attr("y", "550")
+                            .attr("width", "350")
+                            .attr("height", "50")
+                            .attr("stroke", "white")
+                            .attr("fill", "royalblue")
+                        ;
+                        //Affichage texte
+                        svg.append("text")
+                            .attr("id", "text_pays")
+                            .attr("x", "20")
+                            .attr("y", "580")
+                            .text(d3.select(this)._groups[0][0].__data__.properties.ADMIN)
+                            .style("fill", "white")
+                            .style("font-family", "Arial Black")
+                        ;
+                    
+                    })
+                    //Mouseleave : si la souris quitte un pays
+                    .on("mouseleave", function(){
+                        //Remet la couleur originale
+                        d3.select(this).style("fill", tmp_couleur);
+
+                        //Enleve le rectangle d'affichage
+                        d3.select("#rect_pays")
+                        .remove();
+                        //Enleve le nom du pays
+                        d3.select("#text_pays")
+                        .remove();
+                    })
+                    //MouseClick : si la souris clique sur un pays
+                    .on("click", function(){
+
+                        //Gestion du pays cliqué
+                        var clicked_country = d3.select(this)._groups[0][0].__data__.properties.ADMIN;
+                        tmp_selection_pays = clicked_country;
+
+                        d3.select("#pays")
+                            .text(tmp_selection_pays)
+                            .style("text-align", "center")
+                            .style("font-size", "25px")
+                        ;
+
+                        var index_clicked_country = indexCountry(data, clicked_country);
+                        d3.select("#pays").append("p")
+                        .text(data[index_clicked_country].continent)
+
+                        //Appel de la fonction de construction du graph
+                        construire_graph(tmp_selection_pays, tmp_selection_graph);
+
+                    }) 
+
+                })
+                
+            } // fin de la fonction construire map
+
+            //fonction qui renvoit les donnees selon le choix fait
+            function choix_option_map_data(data, pays, choix){
+                switch(choix){
+                    case "total_confirmed": return data[pays].total_confirmed;
+                    case "total_deaths": return data[pays].total_deaths;
+                    case "total_recovered": return data[pays].total_recovered;
+                    case "active_cases": return data[pays].active_cases;
+                    case "serious_or_critical": return data[pays].serious_or_critical;
+                    case "total_cases_per_1m_population": return data[pays].total_cases_per_1m_population;
+                    case "total_deaths_per_1m_population": return data[pays].total_deaths_per_1m_population;
+                    case "total_tests": return data[pays].total_tests;
+                    case "total_tests_per_1m_population": return data[pays].total_tests_per_1m_population;
+                }
+            }
+
+            //Fonction qui donne l'indice du pays avec son nom
+            //entrée: nom du pays; sortie: indice dans data
+            function indexCountry(data, name){
+                for(var k=0; k<data.length; k++){
+                    if(data[k].country == name){
+                        return k;
+                    }
+                }
+            }
+
+            //Fonction qui renvoit une couleur selon un nombre en entree (nb de cas)
+            function choixColor(nb){
+                if(nb == '') return 'white';
+                
+                for(var i=0; i<colors.length; i++){
+                    if(nb < i * (max/colors.length)) return colors[i];
+                    
+                } //else si nb superieur au max
+                return colors[15];
+            }
+
+
+
+            //Fonction de construction du graphique
+            function construire_graph(pays, choix){
+
+                //Supprime l'ancien graph si besoin
+                d3.select("#graph").select("svg").remove();
+
+                //Dimensions du svg
+                var margin = {top: 20, right: 20, bottom: 50, left: 70};
+                var width_country = 700 - margin.left - margin.right;
+                var height_country = 500 - margin.top - margin.bottom;
+
+                //Creation du svg
+                var svg_graph = d3.select("#graph").append("svg")
+                var svg_country = svg_graph.attr("width", width_country + margin.left + margin.right)
+                    .attr("height", height_country + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                ;
+
+                //Affichage d'une ligne horizontale et verticale de la position de la souris
+                svg_graph.on("mouseover", function(){
+                    var mousePosition = d3.pointer(event);
+                    var mouseX = mousePosition[0];
+                    var mouseY = mousePosition[1];
+
+                    d3.select("#line_h").remove();
+                    d3.select("#line_v").remove();
+
+                    svg_graph.append("line")
+                        .attr("id", "line_h")
+                        .attr("stroke", "black")
+                        .attr("x1", mouseX - 1000)
+                        .attr("y1", mouseY)
+                        .attr("x2", mouseX + 1000)
+                        .attr("y2", mouseY)
+                        .attr("stroke-width", 1)
+                    ;
+                    svg_graph.append("line")
+                        .attr("id", "line_v")
+                        .attr("stroke", "black")
+                        .attr("x1", mouseX)
+                        .attr("y1", mouseY - 1000)
+                        .attr("x2", mouseX)
+                        .attr("y2", mouseY + 1000)
+                        .attr("stroke-width", 1)
+                    ;
+                })
+
+                //Utilisation des donnees
+                d3.csv("data/worldometer_coronavirus_daily_data.csv", function(d){
+
+                    //Filtre les donnees selon le choix utilisateur
+                    return { date : d3.timeParse("%Y-%m-%d")(d.date),
+                            value : choix_option_graph_data(d, choix),
+                            country: d.country
+                        };
+
+                }).then(
+
+                    function(data){
+                        //Filtre les donnees selon le pays cliqué
+                        var data_daily_country = [];
+                        for(var n=0; n<data.length; n++){
+                            if(data[n].country == pays){
+                                data_daily_country.push(data[n])
+                            }
+                        }
+
+                        //Construction de la legende
+                        //Abscisse X
+                        var x_country = d3.scaleTime()
+                        .domain(d3.extent(data_daily_country, function(d){return d.date}))
+                        .range([0, width_country]);
+                        svg_country.append("g")
+                        .attr("transform", "translate(0," + height_country + ")")
+                        .call(d3.axisBottom(x_country));
+
+                        //Ordonnees Y
+                        var y_country = d3.scaleLinear()
+                        .domain([0, d3.max(data_daily_country, function(d) {return +d.value; })])
+                        .range([ height_country, 0 ]);
+                        svg_country.append("g")
+                        .call(d3.axisLeft(y_country));
+                        
+                        //Ligne du graphique
+                        svg_country.append("path")
+                        .datum(data_daily_country)
+                        .attr("fill", "none")
+                        .attr("stroke", "SpringGreen")
+                        .attr("d", d3.line()
+                            .x(function(d) { return x_country(d.date) })
+                            .y(function(d) { return y_country(d.value) })
+                        )
+                    }
+
+                )
+            } // fin de la fonction construire_graph
+
+            //Fonction qui renvoit les donnees selon le choix utilisateur
+            function choix_option_graph_data(data, valeur){
+                switch (valeur){
+                    case "cumulative_total_cases": return data.cumulative_total_cases;
+                    case "daily_new_cases": return data.daily_new_cases;
+                    case "active_cases": return data.active_cases;
+                    case "cumulative_total_deaths": return data.cumulative_total_deaths;
+                    case "daily_new_deaths": return data.daily_new_deaths;
+                }
+            }
+
+            //////////////////////////////////////////////////////////////////////
+
+            //////////////////////Construction du tableau ////////////////////////
+
+            //Donnees
+            const columns = ["Pays", "Continent", "Cas confirmés", "Décès", "Rétablis",
+            "Malades actifs", "Malades critiques", "Taux malades sur 1M","Taux mortalité sur 1M",
+            "Nb tests effectués", "Taux tests sur 1M", "Population"];
+            var dataset = [];
+
+            d3.csv("data/worldometer_coronavirus_summary_data.csv")
+            .then( 
+                function(data){
+
+                    //Recuperation des donnees
+                    for( var i=0; i<data.length; i++){
+                        var ligne = [data[i].country, data[i].continent, data[i].total_confirmed, data[i].total_deaths,
+                            data[i].total_recovered, data[i].active_cases, data[i].serious_or_critical, data[i].total_cases_per_1m_population,
+                            data[i].total_deaths_per_1m_population, data[i].total_tests, data[i].total_tests_per_1m_population,
+                            data[i].population];
+
+                        dataset.push(ligne);
+                    }
+
+                    //Creation de la table
+                    creer_table(dataset, columns);
+                }
+            );
+            
+            //Fonction de creation de la table
+            function creer_table(data, columns){
+                //elements du tableau
+                var table = d3.select("#table_sum");
+                var thead = d3.select("#table_sum_thead");
+                var tbody = document.getElementById('table_sum_tbody');
+
+                //thead
+                thead.append("tr")
+                .selectAll("th")
+                .data(columns)
+                .enter()
+                .append("th")
+                .text( function(column) { return column; });
+                
+                //tbody
+                for(var i=0; i<dataset.length; i++){
+                    let row = document.createElement('tr');
+
+                    for(var j=0; j<dataset[i].length; j++){
+                        let cell = document.createElement('td');
+                        cell.innerHTML = dataset[i][j];
+
+                        row.appendChild(cell);
+                    }
+                    tbody.appendChild(row);
+                }
+
+            }
+
+
+        </script>
+
+
+        <p>
+            <a href="#haut">Revenir en haut de la page</a>
+        </p>
+        
+        <hr>
+
+        <footer> 
+            <p>Page réalisé par Kévin TANG</p>
+            <p>Etudiant en L3 Informatique</p>
+            <p> Université Claude Bernard Lyon 1</p>
+        </footer>
+
+    </body>
+</html>
+
+
+
+
+
+<!--     TESTS / BROUILLONS
+
+    ///////////////////// Script construction tableau ///////////////////
+
+    /*
+    var creer_table = function(data, columns){
+                
+        console.log(data[0].country);
+
+        //elements du tableau
+        var table = d3.select("#table_sum");
+        var thead = table.append("thead");
+        var tbody = table.append("tbody");
+
+        //table
+        table.style("background-color", "blue");
+
+        //thead
+        thead.append("tr")
+        .selectAll("th")
+        .data(columns)
+        .enter()
+        .append("th")
+        .text( function(column) { return column; });
+                
+                
+        //rows
+        var rows = tbody.selectAll("tr")
+        .data(data)
+        .enter()
+        .append("tr");
+
+        //cellules
+        var cells = rows.selectAll("td")
+        .data( function(row) {
+            return columns.map( function(column){
+                return {column: column, value: row[column]}
+            })
+        })
+        .enter()
+        .append("td")
+        .text(function(d,i) {return d.value });
+                
+
+        return table;
+    }
+
+    var fichier = "data/worldometer_coronavirus_summary_data.csv";
+    d3.csv(fichier)
+    .then(function(data_sum){
+        //console.log(data_sum);
+
+        // colonnes
+        const columns = ["Pays", "Continent", "Cas confirmés", "Décès", "Rétablis", "Malades actifs", "Malades critiques", 
+        "Taux malades sur 1M", "Taux mortalité sur 1M", "Nb tests effectués", "Taux tests sur 1M", "Population"];
+
+        var info_table = creer_table(data_sum, columns);
+
+        //data_sum.forEach(ligne => console.log(ligne));
+                
+    });
+    */
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+ /* ESSAI DESSIN DE LA MAP AVEC LINE
+                for(var i=0; i<dataset_worldmap[0].geometry.coordinates[0].length-1; i++){
+                    svg.append("line")
+                        .attr("x1", dataset_worldmap[0].geometry.coordinates[0][i][0])
+                        .attr("x2", dataset_worldmap[0].geometry.coordinates[0][i][1])
+                        .attr("y1", dataset_worldmap[0].geometry.coordinates[0][i+1][0])
+                        .attr("y2", dataset_worldmap[0].geometry.coordinates[0][i+1][1])
+                        .attr("stroke", "black")
+                }
+*/
+
+//////////////////////////////////////////////////////////////////////////////////
+
+/* TOOLTIP ESSAI
+            function addTooltip(data){
+
+                var tooltip = d3.select("body")
+                    .append("div")
+                    .style("position", "absolute")
+                    .style("z-index", "10")
+                    .style("visibility", "visible")
+                    .style("background", "#456")
+                    .text(data._groups[0][0].__data__.properties.ADMIN);
+
+                
+                var tooltip = svg.append("g")
+                    .attr("id", "tooltip")
+                    .style("display", "none");
+
+                tooltip.append("polyline")
+                    .attr("points", "0,0 210,0 210,60 0,60 0,0")
+                    .style("fill", "#222b1d")
+                    .style("stroke","black")
+                    .style("opacity","0.9")
+                    .style("stroke-width","1")
+                    .style("padding", "1em");
+
+                var text = tooltip.append("text")
+                .style("font-size", "13px")
+                .style("fill", "#c1d3b8")
+                .attr("transform", "translate(0, 20)");
+
+                text.append("tspan")
+                .attr("x", 105)
+                .attr("y", 0)
+                .attr("id", "tooltip-country")
+                .attr("text-anchor", "middle")
+                .style("font-weight", "600")
+                .style("font-size", "16px");
+
+                return tooltip;
+                
+
+            }
+            */
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+-->

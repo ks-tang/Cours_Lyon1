@@ -1,0 +1,56 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+
+\tikzset{
+  ufnode/.style={
+    circle,
+    draw,
+    thick
+  },
+  ufedge/.style={
+    -latex, 
+    thick
+  }
+}
+
+\begin{tikzpicture}
+  \draw
+  (0,1) node[ufnode] (n00) {0}
+  (1,2) node[ufnode] (n10) {1}
+  (2,1) node[ufnode] (n20) {2}
+  (4,1) node[ufnode] (n30) {3}
+  (5,2) node[ufnode] (n40) {4}
+  (6,1) node[ufnode] (n50) {5}
+  (6,0) node[ufnode] (n60) {6}
+
+  (0,1) +(10,0) node[ufnode] (n01) {0}
+  (1,2) +(10,0) node[ufnode] (n11) {1}
+  (2,1) +(10,0) node[ufnode] (n21) {2}
+  (4,1) +(10,0) node[ufnode] (n31) {3}
+  (5,2) +(10,0) node[ufnode] (n41) {4}
+  (6,1) +(10,0) node[ufnode] (n51) {5}
+  (6,0) +(10,0) node[ufnode] (n61) {6}
+  ;
+
+  \draw[ufedge] (n00) -- (n10) ;
+  \draw[ufedge] (n20) -- (n10) ;
+  \draw[ufedge] (n10) -- (n40) ;
+
+  \draw[ufedge] (n30) -- (n40) ;
+  \draw[ufedge] (n50) -- (n40) ;
+  \draw[ufedge] (n60) -- (n50) ;
+  \draw[ufedge] (n40) edge[loop above] (n4) ;
+
+  \draw[ufedge] (n01) -- (n11) ;
+  \draw[ufedge] (n21) -- (n11) ;
+  \draw[ufedge] (n11) edge[loop above] (n11) ;
+
+  \draw[ufedge] (n31) -- (n41) ;
+  \draw[ufedge] (n51) -- (n41) ;
+  \draw[ufedge] (n61) -- (n51) ;
+  \draw[ufedge] (n41) -- (n11) ;
+\end{tikzpicture}
+
+\end{document}

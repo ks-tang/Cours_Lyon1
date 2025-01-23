@@ -1,0 +1,47 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+
+\tikzset{
+  ufnode/.style={
+    circle,
+    draw,
+    thick
+  },
+  ufedge/.style={
+    -latex, 
+    thick
+  }
+}
+
+\begin{tikzpicture}
+  \draw
+  (0,1) node[ufnode] (n0) {0}
+  (1,2) node[ufnode] (n1) {1}
+  (2,1) node[ufnode] (n2) {2}
+  (5,1) node[ufnode] (n3) {3}
+  (6,2) node[ufnode] (n4) {4}
+  (7,1) node[ufnode] (n5) {5}
+  (7,0) node[ufnode] (n6) {6}
+  (10,1) node[ufnode] (n7) {7}
+  (10,2) node[ufnode] (n8) {8}
+  (13,2) node[ufnode] (n9) {9}
+  ;
+
+  \draw[ufedge] (n0) -- (n1) ;
+  \draw[ufedge] (n2) -- (n1) ;
+  \draw[ufedge] (n1) edge[loop above] (n1) ;
+
+  \draw[ufedge] (n3) -- (n4) ;
+  \draw[ufedge] (n5) -- (n4) ;
+  \draw[ufedge] (n6) -- (n5) ;
+  \draw[ufedge] (n4) edge[loop above] (n4) ;
+
+  \draw[ufedge] (n7) -- (n8) ;
+  \draw[ufedge] (n8) edge[loop above] (n8) ;
+
+  \draw[ufedge] (n9) edge[loop above] (n9) ;
+\end{tikzpicture}
+
+\end{document}

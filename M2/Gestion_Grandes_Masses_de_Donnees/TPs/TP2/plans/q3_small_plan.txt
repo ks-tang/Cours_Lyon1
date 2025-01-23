@@ -1,0 +1,43 @@
+
+                                                                                                                                        QUERY PLAN
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=13214012.24..13214012.60 rows=145 width=564) (actual time=378352.281..378352.298 rows=101 loops=1)
+   Output: d.dep, d.nom, (count(*)), (justify_interval((((avg(p.duree_vie))::text || ' days'::text))::interval))
+   Sort Key: (justify_interval((((avg(p.duree_vie))::text || ' days'::text))::interval)) DESC, d.dep
+   Sort Method: quicksort  Memory: 33kB
+   Buffers: shared hit=4170 read=322089, temp written=141133
+   CTE personnes
+     ->  Seq Scan on public.personne_insee_small  (cost=0.00..13108006.25 rows=2768121 width=93) (actual time=413.024..350656.837 rows=24826829 loops=1)
+           Output: personne_insee_small.nomprenom, CASE WHEN (SUBSTRING(personne_insee_small.lieunaiss FROM 1 FOR 2) = '97'::text) THEN SUBSTRING(personne_insee_small.lieunaiss FROM 1 FOR 3) ELSE SUBSTRING(personne_insee_small.lieunaiss FROM 1 FOR 2) END, CASE WHEN (SUBSTRING(personne_insee_small.lieudeces FROM 1 FOR 2) = '97'::text) THEN SUBSTRING(personne_insee_small.lieudeces FROM 1 FOR 3) ELSE SUBSTRING(personne_insee_small.lieudeces FROM 1 FOR 2) END, (to_date((personne_insee_small.datedeces)::text, 'YYYYMMDD'::text) - to_date((personne_insee_small.datenaiss)::text, 'YYYYMMDD'::text))
+           Filter: (is_date((personne_insee_small.datenaiss)::text) AND is_date((personne_insee_small.datedeces)::text))
+           Rows Removed by Filter: 89840
+           Buffers: shared hit=4162 read=322089
+   ->  HashAggregate  (cost=105996.80..106000.78 rows=145 width=564) (actual time=378351.922..378352.008 rows=101 loops=1)
+         Output: d.dep, d.nom, count(*), justify_interval((((avg(p.duree_vie))::text || ' days'::text))::interval)
+         Group Key: d.dep, d.nom
+         Batches: 1  Memory Usage: 64kB
+         Buffers: shared hit=4162 read=322089, temp written=141133
+         ->  Hash Join  (cost=116.16..85927.92 rows=2006888 width=544) (actual time=416.278..371809.385 rows=22694142 loops=1)
+               Output: d.dep, d.nom, p.duree_vie
+               Hash Cond: (p.dep_naissance = (d.dep)::text)
+               Buffers: shared hit=4162 read=322089, temp written=141133
+               ->  CTE Scan on personnes p  (cost=0.00..55362.42 rows=2768121 width=36) (actual time=413.038..364477.282 rows=24826829 loops=1)
+                     Output: p.nomprenom, p.dep_naissance, p.dep_deces, p.duree_vie
+                     Buffers: shared hit=4162 read=322089, temp written=141133
+               ->  Hash  (cost=114.35..114.35 rows=145 width=540) (actual time=3.189..3.194 rows=101 loops=1)
+                     Output: d.dep, d.nom
+                     Buckets: 1024  Batches: 1  Memory Usage: 13kB
+                     ->  Foreign Scan on public.departement d  (cost=100.00..114.35 rows=145 width=540) (actual time=2.911..3.165 rows=101 loops=1)
+                           Output: d.dep, d.nom
+                           Remote SQL: SELECT dep, nom FROM public.departement
+ Planning:
+   Buffers: shared hit=224 read=1
+ Planning Time: 40.085 ms
+ JIT:
+   Functions: 19
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 3.433 ms, Inlining 187.306 ms, Optimization 141.149 ms, Emission 83.978 ms, Total 415.865 ms
+ Execution Time: 379376.630 ms
+(37 rows)

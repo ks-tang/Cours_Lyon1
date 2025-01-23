@@ -1,0 +1,2044 @@
+AutoGen Definitions dummy;
+struct = {
+  cp-id     = 'structApple';
+  cp-name   = 'Apple';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structApple_1aa9097716b4c43609001d7c1052a05a99';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'renderer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Apple.h';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui dessine et affiche la pomme
+à partir d'une image dans le dossier data
+@param renderer 
+
+Prend les coordonnées de la position de la pomme,
+ajuste en fonction de la tailles des cases,
+charge et affiche l'image
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structApple_1a14b3ecb6bdf582c5e66f2ec4601e1d50';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'genererApple';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Apple.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui génère aléatoirement une position (x,y)
+pour l'objet Apple
+
+Génère les coordonnées x et y
+avec la fonction rand()
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structApple_1aedf8e7ca13c3d949b838b213972a750b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Apple.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Coordonnées x et y de l'objet.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structApple_1a4f79ed7ae0b68f49053147b3d8bad28c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Apple.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structApple_1a56fb5a6cd176b55be9fac1234b30cf54';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceApple';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Apple.h';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialisation de la surface et de la texture.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structApple_1a005bceaaf735bb975e8ef3bbbb263a33';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureApple';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Apple.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/Apple.h';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Structure Apple
+Lorsque le snake mange cet objet,
+le score du joueur augmente
+la taille du snake augmente
+la vitesse du snake augmente
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'classGame';
+  cp-name   = 'Game';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1ad59df6562a58a614fda24622d3715b65';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Game';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Constructeur de la classe Game
+
+Appel la fonction init()
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1ae3d112ca6e0e55150d2fdbc704474530';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~Game';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '105';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Destructeur de la classe Game
+
+Détruit le renderer, la fenêtre
+et arrête les fonctions SDL
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1a1ab78f5ed0d5ea879157357cf2fb2afa';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'run';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '112';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui lance le jeu et le met à jour
+Boucle principale du jeu
+
+Boucle principale du jeu
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1a6f3a33940524b6ba9d83f627ccb14bbf';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'init';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure d'initialisation de SDL
+
+Initialisation de SDL
+Crée une fenêtre et un renderer
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1a69db40b3e5f83ebf8796e005a2e08b57';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'inputs';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure de gestion des actions de l'utilisateur
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1ad014b041a378d1287acde4c9d14c093b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'renderBackground';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'renderer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui affiche un fond (background)
+@param renderer 
+
+Affichage du background pour le jeu
+fond noir ou image de fond
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1a6d54497ce3a66f6dd45eacfdccc8d0bd';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '77';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure d'affichage du jeu
+
+Procédure d'affichage des éléments du jeu
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1a3f8be5fda7486b51fc49afeda591509c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Collisions';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure de gestion des collisions entre les éléments du jeu
+
+Procédure de gestion des évènements de rencontre
+collision entre les différents éléments du jeu
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1adb3b363c8fe0caf529d4f6c43a22f395';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getScore';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure pour obtenir le score
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classGame_1a75ee9668c881eb1b58a5a0ca8ab8ef99';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'EndGame';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '92';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure d'affichage de l'image de fin de jeu
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1adc376cc3011b5c8f1c3897626100174c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Window *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'window';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= nullptr
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Initialisation des variables
+window, renderer et events 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1ae5164c37c0dc74cfb56041174017bf57';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'renderer';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= nullptr
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a5db09d77c83ca75724e2f337926ada1a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Event
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'events';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1aabfcb19a71b0a2e1ef481dc2495c321c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'score';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Entier pour le score du joueur.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1ab77bfcc312425811000819791ea7668e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Snake
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'snake';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Eléments du jeu.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1ab34507189865588eeebc1952fc144faf';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Apple
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'apple';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a1e844b9573574d9b77dd9b084c5fc3d2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Poison
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'poison';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a65b40a11f607c602f6fcc0dd67440e4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Reducer
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reducer';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1ab1e78823783e89b1495d8a0856166ee8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SpeedDown
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'speedDown';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1af5160e1622c39e135d51daeee0f3c3c7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceBackground';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialisation surface et texture pour le background.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a9a77e7b6b3bc04b331a6b32f88e124d9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureBackground';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a500ee9777ec2d6a3fd3465090b61a5a9';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceEnd';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialisation surface et texture pour l'image de fin du jeu.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a0469c80b3a468b4186def4ccd12690d7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureEnd';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a8ca5b9f8a62990e6022de17785beac2c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'running';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= true
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Booléen pour la boucle principale du jeu.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1aa89ff998fee2ed6b6dd764c0bd1707d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'before';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Entiers pour la gestion du temps dans le jeu.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1adb42339dabf63734caf5c03643d49b8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'now';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a36deaa655fbafbcf3981b0ca0580ea2b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'delta';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classGame_1a892ab76a65db83cb12bd2cd7a21f0ca2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'accumulator';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Game.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/Game.h';
+  cp-fileline  = '23';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structPoison';
+  cp-name   = 'Poison';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structPoison_1a2d4e0def028dc1e0eb73b5bdb7e37cfb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'renderer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Poison.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui dessine et affiche le poison
+à partir d'une image dans le dossier data
+@param renderer 
+
+Prend les coordonnées de la position de la pomme,
+ajuste en fonction de la tailles des cases,
+charge et affiche l'image
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structPoison_1a009dc912972f2ab60de58d6ebb3b72db';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'genererPoison';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Poison.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui génère aléatoirement une position (x,y)
+pour l'objet Poison
+
+Génère les coordonnées x et y
+avec la fonction rand()
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structPoison_1a379f5e6964f3d19475b126f9eb84b024';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Poison.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Coordonnées x et y de l'objet.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structPoison_1a4bb6ed9f361ffe8bb7c0e0a2edcf3fad';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Poison.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structPoison_1a6469416041b771c709952f695b478749';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfacePoison';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Poison.h';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialisation de la surface et de la texture.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structPoison_1ad66608ee45a703b39e48f750dcedb8b5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TexturePoison';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Poison.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/Poison.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Structure Poison
+Lorsque le snake mange cet objet,
+il meurt et donc le jeu s'arrête
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structReducer';
+  cp-name   = 'Reducer';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structReducer_1a5c9929a192bd280f4c503ac1a7d92a4c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'renderer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Reducer.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui dessine et affiche le reducer
+à partir d'une image dans le dossier data
+@param renderer 
+
+Prend les coordonnées de la position de la pomme,
+ajuste en fonction de la tailles des cases,
+charge et affiche l'image
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structReducer_1a9edc1ac5ef263e39ed84e8cfb1a0b576';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'genererReducer';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Reducer.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui génère aléatoirement une position (x,y)
+pour l'objet Reducer
+
+Génère les coordonnées x et y
+avec la fonction rand()
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structReducer_1a2ffae457bbdf480911cb1891552c753b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Reducer.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Coordonnées x et y de l'objet.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structReducer_1acdb2017701776eec8ede2e16373c9958';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Reducer.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structReducer_1aeb51857715f4b0a3d82e366cef514fc9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceReduce';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Reducer.h';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialisation de la surface et de la texture.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structReducer_1ac120d3b3a83929b7b45616165d14bbbf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureReduce';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Reducer.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/Reducer.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Structure Reducer
+Lorsque le snake mange cet objet,
+sa taille diminue
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structSnake';
+  cp-name   = 'Snake';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1ad5c9cbf25efb55d3c57a1b1f48f20c42';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'renderer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure d'affichage du snake
+@param renderer
+
+Dessine des cases de couleurs vertes
+pour chaque position du corps du snake
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1a92662240b7c708e0d20236a8d8c616b6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'delta';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'speed';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure de mise à jour du snake
+selon sa position et sa direction
+pour toutes les parties du corps du snake
+@param delta temps de jeu entre deux parcours de boucles 
+@param speed temps de rafraichissement minimum 
+
+Mise à jour de position du snake
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1ac31845fa6830b6bba11cc7ed36e9ea74';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'checkCollision';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '69';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Fonction qui vérifie si le snake atteint une partie de son corps
+@return boolean
+
+Si la position de la tête correspond à celle d'une partie du corps
+return true sinon false
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1a0edc742976cc101b0cd1c73fd267b611';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'checkLimits';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Fonction qui vérifie si le snake atteint un des bords du terrain
+@return boolean
+
+Si la position de la tête dépasse les bords du terrain
+return true sinon false
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1aab7c16e6ef20635ecadfe4a9d7daedd0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'eatApple';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Apple
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'apple';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Fonction qui vérifie si le snake mange une pomme
+@param apple un objet Apple
+@return boolean
+
+Si la position de la tête correspond à celle d'une pomme
+return true sinon false
+la taille du snake augmente
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1a0c3ac372f915c8a16c5b4585bdc6f9d6';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'eatPoison';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Poison
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'poison';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '89';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Fonction qui vérifie si le snake mange du poison
+@param poison un objet Poison
+@return boolean
+
+Si la position de la tête correspond à celle d'un poison
+return true sinon false
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1a1733dfb4e3ce8d0b934b29f220d5ff4d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'eatReducer';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Reducer
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'reducer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '96';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Fonction qui vérifie si le snake atteint un reducer
+@param reducer un objet Reducer
+@return boolean
+
+Si la position de la tête correspond à celle d'un reducer
+return true sinon false
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSnake_1a4571e95ff4ab6819033c35bb94d364c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'eatSpeedDown';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SpeedDown
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'speedDown';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '103';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Fonction qui vérifie si le snake atteint un speedDown
+@param speedDown un objet SpeedDown
+@return boolean
+
+Si la position de la tête correspond à celle d'un speedDown
+return true sinon false
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a78705c7b8c6d515c8f4efb0679e7eeba';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Vector2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'headLocation';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= {0,0}
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Position initiale du snake.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1aca9c4b100fda1829b3f2ad0a8d688b6a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Vector2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'direction';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= {0,1}
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Direction initiale du snake.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a03fe52ed9c27885e81bb827618244566';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Vector2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'body';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Tableau de vecteurs
+qui définie le corps du snake 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a3506275396edc4d02c4ecb66cf51212c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'body_length';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Variable qui gère la taille du snake.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1abc90f20938a9174165e1fe4a89e843f2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'time';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Variables de gestion du temps.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a278a9b8ca7a7c3774e4457039c22c618';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'speed';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 100
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a66f415864517dc4cb8a139c6c6674190';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceHead';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '44';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a32302bd118d21f4e3c703d5a2ad15a61';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureHead';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a0918d3e3ad8194bfb68e31a439cb30f1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceBody';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '47';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSnake_1a813df4d8f6aebd34c6c608a933d53524';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureBody';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      sec-mem-desc-line = '48';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/Snake.h';
+  cp-fileline  = '26';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Structure Snake
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Vector2D';
+        node-link = {
+          node-link-id = 'structVector2D';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'Snake';
+        node-link = {
+          node-link-id = 'structSnake';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+body
+headLocation
+direction
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structSpeedDown';
+  cp-name   = 'SpeedDown';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSpeedDown_1a814701cbe8de251641d5dbb4fb6ab097';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'draw';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+SDL_Renderer *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'renderer';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui dessine et affiche l'objet SpeedDown
+à partir d'une image dans le dossier data
+@param renderer 
+
+Prend les coordonnées de la position de la pomme,
+ajuste en fonction de la tailles des cases,
+charge et affiche l'image
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'structSpeedDown_1ab42095317a0fba239281f144b0481edc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'genererSpeedDown';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Procédure qui génère aléatoirement une position (x,y)
+pour l'objet SpeedDown
+
+Génère les coordonnées x et y
+avec la fonction rand()
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSpeedDown_1a5be16c9260b8f9dc68e202e2d66f0889';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Coordonnées x et y de l'objet.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSpeedDown_1af5ba54b208bd6fc25d144f176ac357ec';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+      sec-mem-desc-line = '16';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSpeedDown_1a72a7e81b917c88bd9673b6b72cbdfddc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Surface *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'SurfaceSlow';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+      sec-mem-desc-line = '19';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialisation de la surface et de la texture.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structSpeedDown_1a15990f69ee0a237e2eb2f0c452319b0f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+SDL_Texture *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TextureSlow';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= NULL
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Structure SpeedDown
+Lorsque le snake mange cet objet,
+sa vitesse diminue
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+struct = {
+  cp-id     = 'structVector2D';
+  cp-name   = 'Vector2D';
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structVector2D_1a8b2576972ac38462ef547a63e45ebe27';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Vector2D.h';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Position 2D x et y.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structVector2D_1a1322c5f0371c25b68ae3045774d746d9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y';
+      sec-mem-desc-file = '/home/kingevant/Projet/snake/src/Vector2D.h';
+      sec-mem-desc-line = '10';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kingevant/Projet/snake/src/Vector2D.h';
+  cp-fileline  = '8';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Structure Vector2D
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+file = {
+  file-id   = 'Apple_8cpp';
+  file-name = 'Apple.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Apple.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Apple_8h';
+  file-name = 'Apple.h';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Apple.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Constantes_8cpp';
+  file-name = 'Constantes.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Constantes.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Constantes_8h';
+  file-name = 'Constantes.h';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'Constantes_8h_1a9649ab8139c4c2ea5c93625b30d92a05';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'WIDTH';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 800
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/kingevant/Projet/snake/src/Constantes.h';
+      var-mem-desc-line = '12';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Tailles de la fenetre.
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Constantes de jeu
+Définition de la taille de la fenêtre
+et de la taille de chaque case
+(en pixel)
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'Constantes_8h_1af728b7647e0b8c49832983a31f9a2e9b';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'HEIGHT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 800
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/kingevant/Projet/snake/src/Constantes.h';
+      var-mem-desc-line = '13';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'Constantes_8h_1a3af25ad4074904b83ee7cca27a822751';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TAILLE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 25
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/kingevant/Projet/snake/src/Constantes.h';
+      var-mem-desc-line = '16';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Taille des cases.
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/kingevant/Projet/snake/src/Constantes.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Game_8cpp';
+  file-name = 'Game.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Game.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Game_8h';
+  file-name = 'Game.h';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Game.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8cpp';
+  file-name = 'main.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char **
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kingevant/Projet/snake/src/main.cpp';
+      func-mem-desc-line = '4';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/kingevant/Projet/snake/src/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Poison_8cpp';
+  file-name = 'Poison.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Poison.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Poison_8h';
+  file-name = 'Poison.h';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Poison.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Reducer_8cpp';
+  file-name = 'Reducer.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Reducer.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Reducer_8h';
+  file-name = 'Reducer.h';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Reducer.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Snake_8cpp';
+  file-name = 'Snake.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Snake.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Snake_8h';
+  file-name = 'Snake.h';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'Snake_8h_1afb344acb91f5e7f5279c19b9fecbb769';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TAILLE_MAX';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 500
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/kingevant/Projet/snake/src/Snake.h';
+      var-mem-desc-line = '19';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Constante pour l'allocation de la mémoire
+pour la taille du snake 
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/kingevant/Projet/snake/src/Snake.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'SpeedDown_8cpp';
+  file-name = 'SpeedDown.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/SpeedDown.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'SpeedDown_8h';
+  file-name = 'SpeedDown.h';
+  file-full-name  = '/home/kingevant/Projet/snake/src/SpeedDown.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Vector2D_8cpp';
+  file-name = 'Vector2D.cpp';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Vector2D.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'Vector2D_8h';
+  file-name = 'Vector2D.h';
+  file-full-name  = '/home/kingevant/Projet/snake/src/Vector2D.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

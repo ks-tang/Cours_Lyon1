@@ -1,0 +1,44 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{libertine}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning, shadows, calc, shapes.multipart, chains, arrows}
+
+\tikzset{ list/.style= {
+        rectangle split, 
+        rectangle split parts = 2,
+        draw,
+        rounded corners,
+        rectangle split horizontal,
+        append after command={
+          let \p1 = (\tikzlastnode.east),
+              \p2 = (\tikzlastnode.center),
+              \n1 = {0.5 * (\x1 + \x2)} in 
+          (\n1,\y2) node[inner sep = 0pt, outer sep = 0pt] (\tikzlastnode +next) {}
+        }
+      }}
+
+\tikzset{ ptr/.style= {
+        draw,
+        *-latex,
+        rounded corners,
+        shorten <= -2.5pt
+      }}
+
+\begin{document}
+
+\begin{tikzpicture}[start chain]
+  \draw node[list, on chain] (c1) {15} ;
+  \draw node[list, on chain] (c2) {22} ;
+  \draw node[list, on chain] (c3) {3} ;
+  \draw node[on chain] (null) {$\times$} ;
+
+  \draw[ptr] (c1+next) -- (c2) ;
+  \draw[ptr] (c2+next) -- (c3) ;
+  \draw[ptr] (c3+next) -- (null) ;
+\end{tikzpicture}
+
+\end{document}

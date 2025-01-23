@@ -1,0 +1,39 @@
+\documentclass{standalone}
+\usepackage{algographics}
+
+\begin{document}
+\begin{tikzpicture}[remember picture, start chain = going base right, node distance=3mm]
+  \slnode[on chain]{bidon}{$\times$}{1}
+  \slnode[on chain]{n0}{1}{1}
+  \slnode[on chain]{n1}{4}{1}
+  \slnode[on chain]{n2}{8}{1}
+  \node[on chain, minimum width = 10mm] (insertpos) {} ;
+  \slnode[on chain]{n3}{10}{1}
+  \slnode[on chain]{n4}{11}{1}
+  \slnode[on chain]{n5}{15}{1}
+  \slnode[on chain]{n6}{20}{1}
+  \slnode[on chain]{n7}{21}{1}
+  \node[on chain] (null) {} ;
+
+  \slnode[above = of insertpos]{new}{9}{1}
+
+  \draw[draw = none] (new+ptr+0) -| coordinate (new+to+0) (new.south west) ;
+  \draw[draw=black, dashed, -latex, rounded corners]
+    (n2+ptr+0) -- ++ (0.3, 0) |- (new+to+0)
+  ;
+  \draw[draw=black, dashed, -latex, rounded corners]
+    (new+ptr+0) -| (n3)
+  ;
+  \draw[fill=black, draw = none] (new+ptr+0) circle[radius=2pt] ;
+
+  \slptr{bidon}{0}{n0}
+  \slptr{n0}{0}{n1}
+  \slptr{n1}{0}{n2}
+  \slptr{n2}{0}{n3}
+  \slptr{n3}{0}{n4}
+  \slptr{n4}{0}{n5}
+  \slptr{n5}{0}{n6}
+  \slptr{n6}{0}{n7}
+  \slptr[nullptr]{n7}{0}{null}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,34 @@
+                                                                                                                                                      QUERY PLAN
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=1450121.87..1450122.23 rows=145 width=564) (actual time=104873.777..104873.785 rows=101 loops=1)
+   Output: d.dep, d.nom, (count(*)), (justify_interval((((avg((to_date((personne_insee_large.datedeces)::text, 'YYYYMMDD'::text) - to_date((personne_insee_large.datenaiss)::text, 'YYYYMMDD'::text))))::text || ' days'::text))::interval))
+   Sort Key: (justify_interval((((avg((to_date((personne_insee_large.datedeces)::text, 'YYYYMMDD'::text) - to_date((personne_insee_large.datenaiss)::text, 'YYYYMMDD'::text))))::text || ' days'::text))::interval)) DESC, d.dep
+   Sort Method: quicksort  Memory: 33kB
+   Buffers: shared hit=3201959 read=21675464
+   ->  HashAggregate  (cost=1450112.68..1450116.66 rows=145 width=564) (actual time=104873.658..104873.734 rows=101 loops=1)
+         Output: d.dep, d.nom, count(*), justify_interval((((avg((to_date((personne_insee_large.datedeces)::text, 'YYYYMMDD'::text) - to_date((personne_insee_large.datenaiss)::text, 'YYYYMMDD'::text))))::text || ' days'::text))::interval)
+         Group Key: d.dep, d.nom
+         Batches: 1  Memory Usage: 64kB
+         Buffers: shared hit=3201959 read=21675464
+         ->  Hash Join  (cost=116.73..1414987.10 rows=2007176 width=558) (actual time=212.878..88984.324 rows=22694142 loops=1)
+               Output: d.dep, d.nom, personne_insee_large.datedeces, personne_insee_large.datenaiss
+               Hash Cond: (CASE WHEN (SUBSTRING(personne_insee_large.lieunaiss FROM 1 FOR 2) = '97'::text) THEN SUBSTRING(personne_insee_large.lieunaiss FROM 1 FOR 3) ELSE SUBSTRING(personne_insee_large.lieunaiss FROM 1 FOR 2) END = (d.dep)::text)
+               Buffers: shared hit=3201959 read=21675464
+               ->  Index Scan using index_q2 on public.personne_insee_large  (cost=0.56..1370574.64 rows=2768518 width=24) (actual time=0.084..78200.593 rows=24826829 loops=1)
+                     Output: personne_insee_large.nomprenom, personne_insee_large.sexe, personne_insee_large.datenaiss, personne_insee_large.lieunaiss, personne_insee_large.commnaiss, personne_insee_large.paysnaiss, personne_insee_large.datedeces, personne_insee_large.lieudeces, personne_insee_large.actedeces
+                     Buffers: shared hit=3201959 read=21675464
+               ->  Hash  (cost=114.35..114.35 rows=145 width=540) (actual time=212.707..212.709 rows=101 loops=1)
+                     Output: d.dep, d.nom
+                     Buckets: 1024  Batches: 1  Memory Usage: 13kB
+                     ->  Foreign Scan on public.departement d  (cost=100.00..114.35 rows=145 width=540) (actual time=211.653..212.665 rows=101 loops=1)
+                           Output: d.dep, d.nom
+                           Remote SQL: SELECT dep, nom FROM public.departement
+ Planning:
+   Buffers: shared read=1
+ Planning Time: 0.565 ms
+ JIT:
+   Functions: 15
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 4.186 ms, Inlining 26.317 ms, Optimization 117.459 ms, Emission 64.290 ms, Total 212.253 ms
+ Execution Time: 104907.199 ms
+(31 rows)
